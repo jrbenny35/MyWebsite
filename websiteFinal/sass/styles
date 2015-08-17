@@ -3,6 +3,9 @@ img
   display: block
   margin: auto
 
+.navbar-brand
+  height: 50px
+  padding: 1px 1px
 
 
 
