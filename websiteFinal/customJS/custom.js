@@ -7,9 +7,16 @@
 $(function (){
 
      $('#whatIDoTrig').on('click', function () {
-         $('#whatIDo').find('.col-xs-12').slideToggle(1000);
-         $("html, body").animate({
-             scrollTop: $('html, body').get(0).scrollHeight}, 1000);
+         var slideIt = $('#whatIDo').find('.col-xs-12');
+         $(slideIt).first().slideDown(500);
+         $(slideIt).first().next().slideDown(750);
+         $(slideIt).first().next().next().slideDown(1000);
+
+            $("html, body").animate({
+                scrollTop: $("footer").offset().top
+            }, 1500);
+
+         $(this).fadeOut(1000);
 
      });
 

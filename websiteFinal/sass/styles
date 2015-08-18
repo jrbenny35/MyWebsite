@@ -20,27 +20,25 @@ img
 
 
 body
-  //background-image: url("../images/background.jpg")
-  background-color: papayawhip
+  background-image: url("../images/patterns_blueprint_grid_graph_desktop_1920x1080_hd-wallpaper-177355.jpg")
+  
   padding-top: 100px
   font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif
 
-.brand
-  font-size: 3.5em
 
-.brand,
-.address-bar
-  text-align: center
-  padding-top: 15px
-  padding-bottom: 15px
-  background-color: #cccccc
-  display: none
+#main
+  background-color: #9AABC4
+  padding: 30px
+  border: 1px solid #405A7F
 
 .carousel
   padding: 5px
+  border: 5px solid #405A7F
+  background-color: white
 
 .jumbotron
   padding: 10px
+  border: 5px solid #405A7F
 
 footer
   border: 1px solid black
@@ -49,9 +47,10 @@ footer
 #whatIDo
   .col-xs-12,
   .col-md-4
-    border: 1px solid black
-    padding: .5em
     display: none
+    padding: 20px
+
+
 
   h2,
   h3
