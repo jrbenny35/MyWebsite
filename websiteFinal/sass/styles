@@ -7,9 +7,13 @@ img
   height: 50px
   padding: 1px 1px
 
+
+
 .lesspadding
   padding-left: 2px
   padding-right: 2px
+
+
 
 .left.carousel-control, .right.carousel-control
   background-image: none !important
@@ -17,6 +21,23 @@ img
 
 body
   //background-image: url("../images/background.jpg")
-  background-color: #222222
-  padding-top: 70px
+  background-color: papayawhip
+  padding-top: 100px
+  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif
 
+.brand
+  font-size: 3.5em
+
+.brand,
+.address-bar
+  text-align: center
+  padding-top: 15px
+  padding-bottom: 15px
+  background-color: #cccccc
+  display: none
+
+.carousel
+  padding: 5px
+
+.jumbotron
+  padding: 3px

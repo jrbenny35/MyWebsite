@@ -19,8 +19,30 @@ img {
 }
 
 body {
-  background-color: #222222;
-  padding-top: 70px;
+  background-color: papayawhip;
+  padding-top: 100px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.brand {
+  font-size: 3.5em;
+}
+
+.brand,
+.address-bar {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #cccccc;
+  display: none;
+}
+
+.carousel {
+  padding: 5px;
+}
+
+.jumbotron {
+  padding: 3px;
 }
 
 /*# sourceMappingURL=styles.css.map */
