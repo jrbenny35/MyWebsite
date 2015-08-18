@@ -45,10 +45,15 @@ body {
   padding: 10px;
 }
 
-#whatIDo .col-xs-6,
-#whatIDo .col-sm-4 {
+footer {
+  border: 1px solid black;
+}
+
+#whatIDo .col-xs-12,
+#whatIDo .col-md-4 {
   border: 1px solid black;
   padding: 0.5em;
+  display: none;
 }
 #whatIDo h2,
 #whatIDo h3 {
@@ -57,6 +62,9 @@ body {
 }
 #whatIDo p {
   text-align: center;
+}
+#whatIDo hr {
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=styles.css.map */
