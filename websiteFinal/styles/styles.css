@@ -42,7 +42,21 @@ body {
 }
 
 .jumbotron {
-  padding: 3px;
+  padding: 10px;
+}
+
+#whatIDo .col-xs-6,
+#whatIDo .col-sm-4 {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+#whatIDo h2,
+#whatIDo h3 {
+  text-align: center;
+  padding: 5px;
+}
+#whatIDo p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

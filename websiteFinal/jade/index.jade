@@ -17,6 +17,33 @@ html
 
   body
     div#main.container
+      div.jumbotron
+        h1 Hello Everyone!
+        p Welcome to my website
+        p
+        a.btn.btn-default(href="#AboutMe", role="button") About me
+      div.carousel.slide#myCarousel(data-ride="carousel")
+        ol.carousel-indicators
+          li.active(data-target="#myCarousel", data-slide-to="0")
+          li(data-target="#myCarousel")
+          li(data-target="#myCarousel")
+
+        div.carousel-inner(role="listbox")
+          div.item.active
+            img.img-responsive(src="../images/930RWB5.jpg", style="max-height: 550px")
+            div.carousel-caption
+              h3 RWB Porsche
+              p The legend
+          div.item
+            img.img-responsive(src="../images/rwb-556fef6ebf19d.jpg", style="max-height: 550px")
+          div.item
+            img.img-responsive(src="../images/823458_561062727317896_1826896789_o.jpg", style="max-height: 550px")
+        a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+          span.glyphicon.glyphicon-chevron-left( aria-hidden="true")
+          span.sr-only Previous
+        a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
+          span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+          span.sr-only Next
       nav.navbar.navbar-fixed-top.navbar-default.navbar-inverse(role="navigation")
         div.container
           a.navbar-header(href="#")
@@ -75,36 +102,14 @@ html
                   li.divider(role="seperator")
                   li
                     a(href="#") Three
-
-
-      div.carousel.slide#myCarousel(data-ride="carousel")
-        ol.carousel-indicators
-          li.active(data-target="#myCarousel", data-slide-to="0")
-          li(data-target="#myCarousel")
-          li(data-target="#myCarousel")
-
-        div.carousel-inner(role="listbox")
-          div.item.active
-            img.img-responsive(src="../images/930RWB5.jpg", style="max-height: 550px")
-            div.carousel-caption
-              h3 RWB Porsche
-              p The legend
-          div.item
-            img.img-responsive(src="../images/rwb-556fef6ebf19d.jpg", style="max-height: 550px")
-          div.item
-            img.img-responsive(src="../images/823458_561062727317896_1826896789_o.jpg", style="max-height: 550px")
-        a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
-          span.glyphicon.glyphicon-chevron-left( aria-hidden="true")
-          span.sr-only Previous
-        a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
-          span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
-          span.sr-only Next
-      div.jumbotron
-        h1 Hello Everyone!
-        p Welcome to my website
-        p
-          a.btn.btn-default(href="#AboutMe", role="button") About me
-      div.row#featuresHeading
+      div.row#whatIDo
+        h2 What Do I Do You Ask?
+        p I write code, LOTS of it!!
+        div.col-xs-6.col-sm-4 col-xs-6, col-sm-4
+          h3 Java
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut euismod lacus. Praesent a arcu eu justo consequat aliquam in nec libero. Etiam mi odio, accumsan vel eleifend quis, ultrices eu tellus. Nulla facilisi. Nam lobortis dui nec lectus luctus ornare. Integer felis sem, efficitur ut enim sit amet, eleifend blandit orci. Maecenas nec pulvinar elit, id semper lacus. Curabitur tempus tortor non blandit efficitur. Nullam sed pretium risus. Duis interdum urna id sapien ornare fringilla. Ut et nulla pulvinar, aliquet leo ac, dictum dui. Vivamus aliquet ligula a odio congue convallis ac ut justo. Mauris gravida lacinia sagittis.
+        div.col-xs-6.col-sm-4 col-xs-6, col-sm-4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut euismod lacus. Praesent a arcu eu justo consequat aliquam in nec libero. Etiam mi odio, accumsan vel eleifend quis, ultrices eu tellus. Nulla facilisi. Nam lobortis dui nec lectus luctus ornare. Integer felis sem, efficitur ut enim sit amet, eleifend blandit orci. Maecenas nec pulvinar elit, id semper lacus. Curabitur tempus tortor non blandit efficitur. Nullam sed pretium risus. Duis interdum urna id sapien ornare fringilla. Ut et nulla pulvinar, aliquet leo ac, dictum dui. Vivamus aliquet ligula a odio congue convallis ac ut justo. Mauris gravida lacinia sagittis.
+        div.col-xs-6.col-sm-4 col-xs-6, col-sm-4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut euismod lacus. Praesent a arcu eu justo consequat aliquam in nec libero. Etiam mi odio, accumsan vel eleifend quis, ultrices eu tellus. Nulla facilisi. Nam lobortis dui nec lectus luctus ornare. Integer felis sem, efficitur ut enim sit amet, eleifend blandit orci. Maecenas nec pulvinar elit, id semper lacus. Curabitur tempus tortor non blandit efficitur. Nullam sed pretium risus. Duis interdum urna id sapien ornare fringilla. Ut et nulla pulvinar, aliquet leo ac, dictum dui. Vivamus aliquet ligula a odio congue convallis ac ut justo. Mauris gravida lacinia sagittis.
       div.row#features
       div.row#info
       div.row#moreInfo
