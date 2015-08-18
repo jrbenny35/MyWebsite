@@ -7,7 +7,7 @@ html
   head
     title
     //Mobile responsive coding
-    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=no")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     //Bootstrap Css
@@ -15,11 +15,15 @@ html
     //Custom Css
     link(href="../styles/styles.css" rel="stylesheet")
 
-  body
+  body.container
     div#main.container
-      nav.navbar.navbar-default
-        div.container-fluid
-          a.navbar-header(href="/")
+      nav.navbar.navbar-fixed-top.navbar-default.navbar-inverse(role="navigation")
+        div.container
+          a.navbar-header(href="#")
+            button.navbar-toggle.collapsed(type="button", data-toggle="collapse", aria-expanded="false", data-target=".navbar-collapse" )
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
             div.navbar-brand
               img(src="../images/logo.jpg", alt="SiteLogo")
           div.navbar-collapse.collapse
@@ -27,17 +31,89 @@ html
             ul.nav.navbar-nav
               li.active
                 a(href="#") Home
+                  span.sr-only (current)
+              li
+                a(href="#") Link
+              //Dropdown toggle
+              li.dropdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Dropdown
+                  span.caret
+                //Dropdown menu Items
+                ul.dropdown-menu
+                  li
+                    a(href="#") One
+                  li
+                    a(href="#") Two
+                  li
+                    a(href="#") Three
+                  li.divider(role="seperator")
+                  li
+                    a(href="#") Four
+                  li.divider(role="seperator")
+                  li
+                    a(href="#") Five
+              // Search Box and Button
+            form.navbar-form.navbar-left(role="search")
+              div.form-group
+                input.form-control(type='text', placeholder="Search")
+              button.btn.btn-default.lesspadding(type="submit") Submit
+            ul.nav.navbar-nav.navbar-right
+              li
+                a(href="#") Link
+              li.dropdown
+                a.dropdown-toggle(href="#", data-toggle="dropdown", role="button",
+                aria-haspopup="true", aria-expanded="false") Dropdown
+                  span.caret
+                //Right dropdown menu options
+                ul.dropdown-menu
+                  li
+                    a(href="#") One
+                  li
+                    a(href="#") Two
+                  li
+                    a(href="#") Three
+                  li.divider(role="seperator")
+                  li
+                    a(href="#") Three
 
-      div.carousel.slide#myCarousel
-      div.row#bigCallout
+
+      div.carousel.slide#myCarousel(data-ride="carousel")
+        ol.carousel-indicators
+          li.active(data-target="#myCarousel", data-slide-to="0")
+          li(data-target="#myCarousel")
+          li(data-target="#myCarousel")
+
+        div.carousel-inner(role="listbox")
+          div.item.active
+            img.img-responsive(src="../images/930RWB5.jpg", style="max-height: 550px")
+            div.carousel-caption
+              h3 RWB Porsche
+              p The legend
+          div.item
+            img.img-responsive(src="../images/rwb-556fef6ebf19d.jpg", style="max-height: 550px")
+          div.item
+            img.img-responsive(src="../images/823458_561062727317896_1826896789_o.jpg", style="max-height: 550px")
+        a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+          span.glyphicon.glyphicon-chevron-left( aria-hidden="true")
+          span.sr-only Previous
+        a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
+          span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
+          span.sr-only Next
+      div.jumbotron
+        h1 Hello Everyone!
+        p Welcome to my website
+        p
+          a.btn.btn-default(href="#AboutMe", role="button") About me
       div.row#featuresHeading
       div.row#features
       div.row#info
       div.row#moreInfo
 
+
+    //JQuery Js Must be first
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+
     //BootStrapJS
-    script(src="../..//js/bootstrap.min.js")
-    //JQuery Js
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+    script(type="text/javascript" src="../../js/bootstrap.min.js")
 
   footer
