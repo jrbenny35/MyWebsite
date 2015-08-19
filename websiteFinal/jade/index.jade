@@ -14,6 +14,7 @@ html
     link(href="../../css/bootstrap.css", rel="stylesheet")
     //Custom Css
     link(href="../styles/styles.css" rel="stylesheet")
+    link(href="../styles/material-wfont.css" rel="stylesheet")
 
 
   body
@@ -22,7 +23,7 @@ html
         h1 Hello Everyone!
         p Welcome to my website
         p
-        a.btn.btn-default(href="#AboutMe", role="button") About me
+        a.btn.btn-default.btn-raised(href="#AboutMe", role="button") About me
       div.carousel.slide#myCarousel(data-ride="carousel")
         ol.carousel-indicators
           li.active(data-target="#myCarousel", data-slide-to="0")
@@ -45,6 +46,7 @@ html
         a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
           span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
           span.sr-only Next
+          //Navbar here -----------------------------------------------------------------
       nav.navbar.navbar-fixed-top.navbar-default.navbar-inverse(role="navigation")
         div.container
           a.navbar-header(href="#")
@@ -83,8 +85,7 @@ html
               // Search Box and Button
             form.navbar-form.navbar-left(role="search")
               div.form-group
-                input.form-control(type='text', placeholder="Search")
-              button.btn.btn-default.lesspadding(type="submit") Submit
+                input.form-control.col-lg-8(type="text" placeholder="Search")
             ul.nav.navbar-nav.navbar-right
               li
                 a(href="#") Link
@@ -104,9 +105,11 @@ html
                   li
                     a(href="#") Three
       div.row#whatIDo
-        h2 What Do I Do You Ask?
-        p I write code, LOTS of it!!
-        p  Here are some examples of my work
+        div
+          #whatIDoP.center-block
+            h2 What Do I Do You Ask?
+            p I write code, LOTS of it!!
+            p  Here are some examples of my work
           div.btn.btn-default.center-block#whatIDoTrig(role="button") Click me
         hr
         div.col-xs-12.col-md-4 col-xs-12, col-md-4

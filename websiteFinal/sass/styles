@@ -13,6 +13,9 @@ img
   padding-left: 2px
   padding-right: 2px
 
+//.navbar
+  max-height: 50px
+
 
 
 .left.carousel-control, .right.carousel-control
@@ -27,7 +30,7 @@ body
 
 
 #main
-  background-color: #9AABC4
+  //background-color: #9AABC4
   padding: 30px
   border: 1px solid #405A7F
 
@@ -65,4 +68,7 @@ footer
   hr
     border: 1px solid black
 
-
+#whatIDoP
+  max-width: 500px
+  background-color: #00aac0
+  padding: 15px

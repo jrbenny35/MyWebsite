@@ -25,7 +25,6 @@ body {
 }
 
 #main {
-  background-color: #9AABC4;
   padding: 30px;
   border: 1px solid #405A7F;
 }
@@ -60,6 +59,12 @@ footer {
 }
 #whatIDo hr {
   border: 1px solid black;
+}
+
+#whatIDoP {
+  max-width: 500px;
+  background-color: #00aac0;
+  padding: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
