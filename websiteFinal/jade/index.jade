@@ -11,125 +11,80 @@ html
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     //Bootstrap Css
-    link(href="../../css/bootstrap.css", rel="stylesheet")
+    link(href="../../css/bootstrap4/bootstrap.css", rel="stylesheet")
     //Custom Css
     link(href="../styles/styles.css" rel="stylesheet")
-    link(href="../styles/material-wfont.css" rel="stylesheet")
+    //link(href="../styles/material-wfont.css" rel="stylesheet")
 
 
   body
-    div#main.container
-      div.jumbotron
-        h1 Hello Everyone!
-        p Welcome to my website
-        p
-        a.btn.btn-default.btn-raised(href="#AboutMe", role="button") About me
-      div.carousel.slide#myCarousel(data-ride="carousel")
-        ol.carousel-indicators
-          li.active(data-target="#myCarousel", data-slide-to="0")
-          li(data-target="#myCarousel")
-          li(data-target="#myCarousel")
-
-        div.carousel-inner(role="listbox")
-          div.item.active
-            img.img-responsive(src="../images/930RWB5.jpg", style="max-height: 550px")
-            div.carousel-caption
-              h3 RWB Porsche
-              p The legend
-          div.item
-            img.img-responsive(src="../images/rwb-556fef6ebf19d.jpg", style="max-height: 550px")
-          div.item
-            img.img-responsive(src="../images/823458_561062727317896_1826896789_o.jpg", style="max-height: 550px")
-        a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
-          span.glyphicon.glyphicon-chevron-left( aria-hidden="true")
-          span.sr-only Previous
-        a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
-          span.glyphicon.glyphicon-chevron-right(aria-hidden="true")
-          span.sr-only Next
-          //Navbar here -----------------------------------------------------------------
-      nav.navbar.navbar-fixed-top.navbar-default.navbar-inverse(role="navigation")
-        div.container
-          a.navbar-header(href="#")
-            button.navbar-toggle.collapsed(type="button", data-toggle="collapse", aria-expanded="false", data-target=".navbar-collapse" )
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            div.navbar-brand
-              img(src="../images/logo.jpg", alt="SiteLogo")
-          div.navbar-collapse.collapse
-            //Navbar
-            ul.nav.navbar-nav
-              li.active
-                a(href="#") Home
-                  span.sr-only (current)
-              li
-                a(href="#") Link
-              //Dropdown toggle
-              li.dropdown
-                a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Dropdown
-                  span.caret
-                //Dropdown menu Items
-                ul.dropdown-menu
-                  li
-                    a(href="#") One
-                  li
-                    a(href="#") Two
-                  li
-                    a(href="#") Three
-                  li.divider(role="seperator")
-                  li
-                    a(href="#") Four
-                  li.divider(role="seperator")
-                  li
-                    a(href="#") Five
-              // Search Box and Button
-            form.navbar-form.navbar-left(role="search")
-              div.form-group
-                input.form-control.col-lg-8(type="text" placeholder="Search")
-            ul.nav.navbar-nav.navbar-right
-              li
-                a(href="#") Link
-              li.dropdown
-                a.dropdown-toggle(href="#", data-toggle="dropdown", role="button",
-                aria-haspopup="true", aria-expanded="false") Dropdown
-                  span.caret
-                //Right dropdown menu options
-                ul.dropdown-menu
-                  li
-                    a(href="#") One
-                  li
-                    a(href="#") Two
-                  li
-                    a(href="#") Three
-                  li.divider(role="seperator")
-                  li
-                    a(href="#") Three
-      div.row#whatIDo
-        div
-          #whatIDoP.center-block
-            h2 What Do I Do You Ask?
-            p I write code, LOTS of it!!
-            p  Here are some examples of my work
-          div.btn.btn-default.center-block#whatIDoTrig(role="button") Click me
-        hr
-        div.col-xs-12.col-md-4 col-xs-12, col-md-4
-          h3 Java
-            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut euismod lacus. Praesent a arcu eu justo consequat aliquam in nec libero. Etiam mi odio, accumsan vel eleifend quis, ultrices eu tellus. Nulla facilisi. Nam lobortis dui nec lectus luctus ornare. Integer felis sem, efficitur ut enim sit amet, eleifend blandit orci. Maecenas nec pulvinar elit, id semper lacus. Curabitur tempus tortor non blandit efficitur. Nullam sed pretium risus. Duis interdum urna id sapien ornare fringilla. Ut et nulla pulvinar, aliquet leo ac, dictum dui. Vivamus aliquet ligula a odio congue convallis ac ut justo. Mauris gravida lacinia sagittis.
-        div.col-xs-12.col-md-4 col-xs-12, col-md-4
-          h3 Mobile
-           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut euismod lacus. Praesent a arcu eu justo consequat aliquam in nec libero. Etiam mi odio, accumsan vel eleifend quis, ultrices eu tellus. Nulla facilisi. Nam lobortis dui nec lectus luctus ornare. Integer felis sem, efficitur ut enim sit amet, eleifend blandit orci. Maecenas nec pulvinar elit, id semper lacus. Curabitur tempus tortor non blandit efficitur. Nullam sed pretium risus. Duis interdum urna id sapien ornare fringilla. Ut et nulla pulvinar, aliquet leo ac, dictum dui. Vivamus aliquet ligula a odio congue convallis ac ut justo. Mauris gravida lacinia sagittis.
-        div.col-xs-12.col-md-4 col-xs-12, col-md-4
-          h3 Web
-           p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ut euismod lacus. Praesent a arcu eu justo consequat aliquam in nec libero. Etiam mi odio, accumsan vel eleifend quis, ultrices eu tellus. Nulla facilisi. Nam lobortis dui nec lectus luctus ornare. Integer felis sem, efficitur ut enim sit amet, eleifend blandit orci. Maecenas nec pulvinar elit, id semper lacus. Curabitur tempus tortor non blandit efficitur. Nullam sed pretium risus. Duis interdum urna id sapien ornare fringilla. Ut et nulla pulvinar, aliquet leo ac, dictum dui. Vivamus aliquet ligula a odio congue convallis ac ut justo. Mauris gravida lacinia sagittis.
-      div.row#features
-      div.row#info
-      div.row#moreInfo
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-dark.bg-inverse
+      a.navbar-brand(href="#") 4Hands
+      ul.nav.nav-pills
+        li.nav-item.active
+          a.nav-link(href="#") Home
+            span.sr-only (Current)
+        li.nav-item.active
+          a.nav-link(href="#") Info
+        li.nav-item.active
+          a.nav-link(href="#") About
+        li.nav-item.active
+          a.nav-link(href="#") Contact
+    //Carousel
+    div#myCarousel.carousel.slide(data-ride="carousel")
+      ol.carousel-indicators
+        li.active(data-target="myCarousel", data-slide-to="0")
+        li(data-target="myCarousel", data-slide-to="1")
+        li(data-target="myCarousel", data-slide-to="2")
+      .carousel-inner(role="listbox")
+        .carousel-item.active
+          img.first-slide(src="../images/930RWB5.jpg")
+          .container
+            .carousel-caption.text-left
+              h1 Example
+              p Stuff
+        .carousel-item
+          img.first-slide(src="../images/930RWB5.jpg")
+          .container
+            .carousel-caption
+              h1 Example
+              p Stuff
+        .carousel-item
+          img.first-slide(src="../images/930RWB5.jpg")
+          .container
+            .carousel-caption
+              h1 Example
+              p Stuff
+      a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+        span.sr-only(Previous)
+      a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
+        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+        span.sr-only(Next)
+    //Social Media Links
+    div.container.socialMedia.addMargin
+      .row
+        .col-lg-4
+          img.img-circle(src="../images/linkedin.png", alt="Linked in", height='140', width="140")
+          h2 Linked in Profile
+          p This is my linked in
+          p.btn.btn-secondary(href="#LinkedIn", role="button") Go take a Look!
+        .col-lg-4
+          img.img-circle(src="../images/google_plus_logo.jpg", alt="Linked in", height='140', width="140")
+          h2 Google+
+          p Add me here as I'll constantly be updating
+          p.btn.btn-secondary(href="#LinkedIn", role="button") Go take a Look!
+        .col-lg-4
+          img.img-circle(src="../images/github_icon.png", alt="Linked in", height='140', width="140")
+          h2 Github
+          p Come and see my current projects. Don't be afraid to help!
+          p.btn.btn-secondary(href="#LinkedIn", role="button") Go take a Look!
 
 
     //JQuery Js Must be first
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
     //BootStrapJS
-    script(type="text/javascript" src="../../js/bootstrap.min.js")
+    script(type="text/javascript" src="../../js/bootstrap4/bootstrap.min.js")
     //Custom JS
     script(type="text/javascript" src="../customJS/custom.js")
   footer
