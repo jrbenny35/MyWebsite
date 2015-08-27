@@ -1,3 +1,7 @@
+body {
+  padding: 1rem;
+}
+
 img {
   max-height: 100%;
   display: block;
@@ -112,6 +116,10 @@ footer {
   max-width: 500px;
   background-color: #00aac0;
   padding: 15px;
+}
+
+#content {
+  padding: 5px;
 }
 
 /* Bump up size of carousel content */
