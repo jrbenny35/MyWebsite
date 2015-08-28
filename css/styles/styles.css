@@ -1,7 +1,7 @@
 @font-face {
   font-family: "RobotoDraft";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 100;
   src: local("RobotoDraft Thin"), local("RobotoDraft-Thin"), url(https://fonts.gstatic.com/s/robotodraft/v2/hope9NW9iJ5hh8P5PM_EA2zZpt1Zv2lgqhgSPQ2HnUo.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
@@ -27,9 +27,21 @@ hr {
 }
 
 .navbar .nav .nav-item a.nav-link {
-  color: black;
-  font: 1.5rem "RobotoDraft", sans-serif;
-  font-weight: bold;
+  background: #607d8b !important;
+  font: 1rem "RobotoDraft", sans-serif;
+  font-weight: normal;
+}
+
+.hvr-rectangle-out {
+  background: #e1e1e1;
+}
+
+.hvr-rectangle-out:before {
+  background: #cfd8dc;
+}
+
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: white;
 }
 
 .navbar .nav-pills .active {
@@ -94,10 +106,10 @@ hr {
   background-color: white;
 }
 
-.carousel-item {
+.carousel .carousel-inner .carousel-item .container .carousel-caption h1, .carousel .carousel-inner .carousel-item .container .carousel-caption p {
   height: 42rem;
   background-color: #777;
-  font: 20px "RobotoDraft", sans-serif;
+  font: 10px "RobotoDraft", sans-serif;
 }
 
 .carousel-item img {

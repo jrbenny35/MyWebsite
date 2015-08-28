@@ -32,11 +32,19 @@ hr
 .navbar
   .nav
     .nav-item
-      a:hover
-        //background-color: white
-        color: white
+      a.nav-link
+        background: #607d8b !important
         font: 1rem "RobotoDraft", sans-serif
         font-weight: normal
+
+.hvr-rectangle-out
+  background: #e1e1e1
+
+.hvr-rectangle-out:before
+  background: #cfd8dc
+
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active
+  color: white
 
 .navbar
   .nav-pills
