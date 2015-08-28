@@ -11,6 +11,7 @@ html
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     link(href="../styles/material-wfont.css" rel="stylesheet")
+    link(href="../styles/material-fullpalette.css" rel="stylesheet")
     //Bootstrap Css
     link(href="../../css/bootstrap4/bootstrap.css", rel="stylesheet")
     //Custom Css
@@ -19,7 +20,7 @@ html
 
 
   body
-    nav.navbar.navbar-default.navbar-fixed-top.navbar-dark.bg-inverse
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-dark.navbar-material-teal-600
       a.navbar-brand(href="#")
         img(src="../images/logo.jpg")
       ul.nav.nav-pills
@@ -33,36 +34,38 @@ html
         li.nav-item.active
           a.nav-link(href="#") Contact
     //Carousel
-    div#myCarousel.carousel.slide(data-ride="carousel")
-      ol.carousel-indicators
-        li.active(data-target="myCarousel", data-slide-to="0")
-        li(data-target="myCarousel", data-slide-to="1")
-        li(data-target="myCarousel", data-slide-to="2")
-      .carousel-inner(role="listbox")
-        .carousel-item.active
-          img.first-slide(src="../images/930RWB5.jpg")
-          .container
-            .carousel-caption.text-left
-              h1 Example
-              p Stuff
-        .carousel-item
-          img.first-slide(src="../images/930RWB5.jpg")
-          .container
-            .carousel-caption
-              h1 Example
-              p Stuff
-        .carousel-item
-          img.first-slide(src="../images/930RWB5.jpg")
-          .container
-            .carousel-caption
-              h1 Example
-              p Stuff
-      a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
-        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
-        span.sr-only(Previous)
-      a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
-        span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
-        span.sr-only(Next)
+    .container
+      div#myCarousel.carousel.slide(data-ride="carousel")
+        ol.carousel-indicators
+          li.active(data-target="myCarousel", data-slide-to="0")
+          li(data-target="myCarousel", data-slide-to="1")
+          li(data-target="myCarousel", data-slide-to="2")
+        .carousel-inner(role="listbox")
+          .carousel-item.active
+            img.first-slide.center-block.img-responsive(src="../images/business-handshake.jpg")
+            .container
+              .carousel-caption
+                h1 Welcome!
+                p I hope you enjoy your stay! Scroll down for more or click the link!
+                p.btn.btn-secondary(href="#AboutMe", role="button") About me
+          .carousel-item
+            img.first-slide.center-block.img-responsive(src="../images/sign-here.jpg")
+            .container
+              .carousel-caption
+                h1 Example
+                p Stuff
+          .carousel-item
+            img.first-slide(src="../images/930RWB5.jpg")
+            .container
+              .carousel-caption
+                h1 Example
+                p Stuff
+        a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+          span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+          span.sr-only(Previous)
+        a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
+          span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+          span.sr-only(Next)
     //Social Media Links
     div.container.socialMedia.addMargin#content
       .row
@@ -70,17 +73,17 @@ html
           img.img-circle(src="../images/linkedin.png", alt="Linked in", height='140', width="140")
           h2 Linked in Profile
           p This is my linked in
-          p.btn.btn-secondary(href="#LinkedIn", role="button") Go take a Look!
+          p.btn.btn-secondary.btn-raised(href="#LinkedIn", role="button") Go take a Look!
         .col-lg-4
           img.img-circle(src="../images/google_plus_logo.jpg", alt="Linked in", height='140', width="140")
           h2 Google+
           p Add me here as I'll constantly be updating
-          p.btn.btn-secondary(href="#LinkedIn", role="button") Go take a Look!
+          p.btn.btn-secondary.btn-raised(href="#LinkedIn", role="button") Go take a Look!
         .col-lg-4
           img.img-circle(src="../images/github_icon.png", alt="Linked in", height='140', width="140")
           h2 Github
           p Come and see my current projects. Don't be afraid to help!
-          p.btn.btn-secondary(href="#LinkedIn", role="button") Go take a Look!
+          p.btn.btn-secondary.btn-raised(href="#LinkedIn", role="button") Go take a Look!
 
         //Features
       hr.featurette-divider
