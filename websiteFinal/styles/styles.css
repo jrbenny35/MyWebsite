@@ -1,14 +1,10 @@
 @font-face {
   font-family: "RobotoDraft";
   font-style: normal;
-  font-weight: 100;
+  font-weight: 500;
   src: local("RobotoDraft Thin"), local("RobotoDraft-Thin"), url(https://fonts.gstatic.com/s/robotodraft/v2/hope9NW9iJ5hh8P5PM_EA2zZpt1Zv2lgqhgSPQ2HnUo.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-* {
-  font: 20px "RobotoDraft", sans-serif;
-}
-
 body {
   padding-top: 5rem;
   padding-bottom: 3rem;
@@ -28,7 +24,8 @@ img {
 
 .navbar .nav .nav-item a.nav-link {
   color: black;
-  font-size: larger;
+  font: 1.5rem "RobotoDraft", sans-serif;
+  font-weight: bold;
 }
 
 .lesspadding {
@@ -47,7 +44,7 @@ img {
 
 .featurette-divider {
   margin: 5rem 0;
-  background-color: #0074d9;
+  background-color: black;
 }
 
 /* Thin out the headings */
@@ -75,6 +72,7 @@ img {
 .carousel-item {
   height: 42rem;
   background-color: #777;
+  font: 20px "RobotoDraft", sans-serif;
 }
 
 .carousel-item img {
