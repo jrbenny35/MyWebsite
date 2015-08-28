@@ -20,7 +20,7 @@ html
 
 
   body
-    nav.navbar.navbar-default.navbar-fixed-top.navbar-dark.navbar-material-teal-600
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-dark.navbar-material-blue-grey-500
       a.navbar-brand(href="#")
         img(src="../images/logo.jpg")
       ul.nav.nav-pills
@@ -47,19 +47,21 @@ html
               .carousel-caption
                 h1 Welcome!
                 p I hope you enjoy your stay! Scroll down for more or click the link!
-                p.btn.btn-secondary(href="#AboutMe", role="button") About me
+                p.btn.btn-secondary.btn-raised(href="#AboutMe", role="button") About me
           .carousel-item
             img.first-slide.center-block.img-responsive(src="../images/sign-here.jpg")
             .container
               .carousel-caption
-                h1 Example
-                p Stuff
+                h1 Contact Me
+                p Contact form if you would like to get in touch with me
+                p.btn.btn-secondary.btn-raised(href="#Contact", role="button") Contact Me
           .carousel-item
             img.first-slide(src="../images/930RWB5.jpg")
             .container
               .carousel-caption
-                h1 Example
-                p Stuff
+                h1 Current Projects
+                p Check out some of the things I am working on!
+                p.btn.btn-secondary.btn-default(href="#Projects", role="button") Projects
         a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
           span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
           span.sr-only(Previous)
