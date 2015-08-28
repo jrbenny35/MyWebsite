@@ -138,9 +138,8 @@ hr
   .row
     .col-lg-12
       h1
-        background-color: #006151
-        color: white
-        
+
+
 
 
 #content
