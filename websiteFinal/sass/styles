@@ -20,6 +20,10 @@ img
   max-height: 100%
   display: block
   margin: auto
+
+hr
+  border: 1px solid black
+
 //navbar
 .navbar-brand
   height: 50px
@@ -44,12 +48,25 @@ img
   padding-left: 2px
   padding-right: 2px
 
-.morepadding
-  padding-left: 10px
-  padding-right: 5px
+.morePadding
+  padding-left: 1rem
+  padding-right: 1rem
 
 .addMargin
-  margin-top: 1rem
+  margin-top: 1.5rem
+  margin-bottom: 1.5rem
+
+.leftright
+  border-left: 1px solid black
+  border-right: 1px solid black
+
+#features
+  background-color: white
+  padding: 1rem
+
+#myResume
+  background-color: white
+  padding: 1rem
 
 //Featurette
 .featurette-divider
@@ -116,6 +133,19 @@ img
 .socialMedia .col-lg-4 p
   margin-right: .75rem
   margin-left: .75rem
+
+.socialMedia
+  .row
+    .col-lg-12
+      h1
+        background-color: #006151
+        color: white
+        
+
+
+#content
+  background-color: white
+
 
 .jumbotron
   padding: 10px

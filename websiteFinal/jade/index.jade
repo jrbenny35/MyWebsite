@@ -19,7 +19,7 @@ html
     //link(href="../styles/material-wfont.css" rel="stylesheet")
 
 
-  body
+  body.morePadding
     nav.navbar.navbar-default.navbar-fixed-top.navbar-dark.navbar-material-blue-grey-500
       a.navbar-brand(href="#")
         img(src="../images/logo.jpg")
@@ -69,14 +69,18 @@ html
           span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
           span.sr-only(Next)
     //Social Media Links
-    div.container.socialMedia.addMargin#content
+    div.container.socialMedia.addMargin.shadow-z-4.addMargin#content
+      .row
+        .col-lg-12.text-center.morePadding.center-block
+          h1 Are we connected?
+          hr
       .row
         .col-lg-4
           img.img-circle(src="../images/linkedin.png", alt="Linked in", height='140', width="140")
           h2 Linked in Profile
           p This is my linked in
           p.btn.btn-secondary.btn-raised(href="#LinkedIn", role="button") Go take a Look!
-        .col-lg-4
+        .col-lg-4.leftright
           img.img-circle(src="../images/google_plus_logo.jpg", alt="Linked in", height='140', width="140")
           h2 Google+
           p Add me here as I'll constantly be updating
@@ -86,18 +90,17 @@ html
           h2 Github
           p Come and see my current projects. Don't be afraid to help!
           p.btn.btn-secondary.btn-raised(href="#LinkedIn", role="button") Go take a Look!
-
-        //Features
-      hr.featurette-divider
-      .row.featurette
-        .col-md-7
-          h2.featurette-heading Resume
-            span.text-muted  It's outstanding, trust me.
-          p.lead This is where I will put my resume link.
-          p.btn.btn-default.btn-raised Click Here
-        .col-md-5
-          img.featurette-image.img-responsive.center-block(src="../images/github_icon.png", alt="Document image", width="400", height="400")
-      hr.featurette-divider
+    .container-fluid.shadow-z-4.addMargin#myResume
+      .container
+        .row.featurette
+          .col-md-7
+            h2.featurette-heading Resume
+              span.text-muted  It's outstanding, trust me.
+            p.lead This is where I will put my resume link.
+            p.btn.btn-default.btn-raised Click Here
+          .col-md-5
+            img.featurette-image.img-responsive.center-block(src="../images/github_icon.png", alt="Document image", width="400", height="400")
+    .container.shadow-z-4.addMargin#features
       .row.featurette
         .col-md-7.col-md-push-5
           h2.featurette-heading Some of the things I am into
@@ -113,7 +116,9 @@ html
           p.lead Blog containing posts about technology mainly
         .col-md-5
           img.featurette-image.img-responsive.center-block(src="../images/github_icon.png", alt="Document image", width="400", height="400")
-
+    .container#myFooter
+      footer.morepadding
+        p &copy; 2015 Coded by Benjamin Forehand Jr
 
     //JQuery Js Must be first
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
@@ -121,5 +126,3 @@ html
     script(type="text/javascript" src="../../js/bootstrap4/bootstrap.min.js")
     //Custom JS
     script(type="text/javascript" src="../customJS/custom.js")
-  footer
-    p This is a footer

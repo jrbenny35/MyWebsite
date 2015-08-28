@@ -18,7 +18,7 @@
     <!--link(href="../styles/material-wfont.css" rel="stylesheet")-->
     
   </head>
-  <body>
+  <body class="morePadding">
     <nav class="navbar navbar-default navbar-fixed-top navbar-dark navbar-material-blue-grey-500"><a href="#" class="navbar-brand"><img src="../images/logo.jpg"></a>
       <ul class="nav nav-pills">
         <li class="nav-item active"><a href="#" class="nav-link">Home<span class="sr-only">(Current)</span></a></li>
@@ -67,14 +67,20 @@
       </div>
     </div>
     <!--Social Media Links-->
-    <div id="content" class="container socialMedia addMargin">
+    <div id="content" class="container socialMedia addMargin shadow-z-4 addMargin">
+      <div class="row">
+        <div class="col-lg-12 text-center morePadding center-block">
+          <h1>Are we connected?</h1>
+          <hr>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-4"><img src="../images/linkedin.png" alt="Linked in" height="140" width="140" class="img-circle">
           <h2>Linked in Profile</h2>
           <p>This is my linked in</p>
           <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised">Go take a Look!</p>
         </div>
-        <div class="col-lg-4"><img src="../images/google_plus_logo.jpg" alt="Linked in" height="140" width="140" class="img-circle">
+        <div class="col-lg-4 leftright"><img src="../images/google_plus_logo.jpg" alt="Linked in" height="140" width="140" class="img-circle">
           <h2>Google+</h2>
           <p>Add me here as I'll constantly be updating</p>
           <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised">Go take a Look!</p>
@@ -84,18 +90,21 @@
           <p>Come and see my current projects. Don't be afraid to help!</p>
           <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised">Go take a Look!</p>
         </div>
-        <!--Features-->
       </div>
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Resume<span class="text-muted"> It's outstanding, trust me.</span></h2>
-          <p class="lead">This is where I will put my resume link.</p>
-          <p class="btn btn-default btn-raised">Click Here</p>
+    </div>
+    <div id="myResume" class="container-fluid shadow-z-4 addMargin">
+      <div class="container">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Resume<span class="text-muted"> It's outstanding, trust me.</span></h2>
+            <p class="lead">This is where I will put my resume link.</p>
+            <p class="btn btn-default btn-raised">Click Here</p>
+          </div>
+          <div class="col-md-5"><img src="../images/github_icon.png" alt="Document image" width="400" height="400" class="featurette-image img-responsive center-block"></div>
         </div>
-        <div class="col-md-5"><img src="../images/github_icon.png" alt="Document image" width="400" height="400" class="featurette-image img-responsive center-block"></div>
       </div>
-      <hr class="featurette-divider">
+    </div>
+    <div id="features" class="container shadow-z-4 addMargin">
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
           <h2 class="featurette-heading">Some of the things I am into<span class="text-muted"> Most are loud ;)</span></h2>
@@ -112,6 +121,11 @@
         <div class="col-md-5"><img src="../images/github_icon.png" alt="Document image" width="400" height="400" class="featurette-image img-responsive center-block"></div>
       </div>
     </div>
+    <div id="myFooter" class="container">
+      <footer class="morepadding">
+        <p>&copy; 2015 Coded by Benjamin Forehand Jr</p>
+      </footer>
+    </div>
     <!--JQuery Js Must be first-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--BootStrapJS-->
@@ -119,7 +133,4 @@
     <!--Custom JS-->
     <script type="text/javascript" src="../customJS/custom.js"></script>
   </body>
-  <footer>
-    <p>This is a footer</p>
-  </footer>
 </html>
