@@ -34,6 +34,11 @@ img
         font: 1.5rem "RobotoDraft", sans-serif
         font-weight: bold
 
+.navbar
+  .nav-pills
+    .active
+      color: rgba(255, 255, 255, 0.9)
+      background-color: #78909c
 
 .lesspadding
   padding-left: 2px
