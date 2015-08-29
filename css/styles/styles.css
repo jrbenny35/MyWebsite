@@ -18,7 +18,35 @@ img {
 }
 
 hr {
-  border: 1px solid black;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+#myBio {
+  background-color: white;
+  padding: 1rem;
+}
+
+#myResume {
+  background-color: white;
+  padding: 1rem;
+}
+
+#myPortfolio {
+  background-color: white;
+  padding: 1rem;
+}
+
+#myPortfolio h1 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: -1.5rem;
+  font: 3rem "RobotoDraft", sans-serif;
+  font-weight: bold;
 }
 
 .navbar-brand {
@@ -33,7 +61,7 @@ hr {
 }
 
 .hvr-rectangle-out:before {
-  background: #cfd8dc;
+  background: #455a64;
 }
 
 .navbar .nav-pills .active {
@@ -59,16 +87,6 @@ hr {
 .leftright {
   border-left: 1px solid black;
   border-right: 1px solid black;
-}
-
-#features {
-  background-color: white;
-  padding: 1rem;
-}
-
-#myResume {
-  background-color: white;
-  padding: 1rem;
 }
 
 .featurette-divider {
@@ -113,7 +131,7 @@ hr {
   top: 0;
   left: 0;
   min-width: 100%;
-  max-height: 32rem;
+  max-height: 34rem;
   display: block;
 }
 
