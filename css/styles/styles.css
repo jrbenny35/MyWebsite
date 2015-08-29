@@ -8,7 +8,7 @@
 body {
   padding-top: 5rem;
   padding-bottom: 3rem;
-  background-color: #fdfdf0;
+  background-color: #90a4ae;
 }
 
 img {
@@ -29,6 +29,7 @@ hr {
 .navbar .nav .nav-item a.nav-link {
   font: 1.5rem "RobotoDraft", sans-serif;
   font-weight: normal;
+  color: #cfd8dc;
 }
 
 .hvr-rectangle-out:before {
@@ -141,6 +142,41 @@ hr {
 .socialMedia .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+}
+
+#content {
+  background-color: white;
+}
+
+footer {
+  border: 1px solid black;
+}
+
+#whatIDo .col-xs-12,
+#whatIDo .col-md-4 {
+  display: none;
+  padding: 20px;
+}
+#whatIDo h2,
+#whatIDo h3 {
+  text-align: center;
+  padding: 5px;
+}
+#whatIDo p {
+  text-align: center;
+}
+#whatIDo hr {
+  border: 1px solid black;
+}
+
+#whatIDoP {
+  max-width: 500px;
+  background-color: #00aac0;
+  padding: 15px;
+}
+
+#content {
+  padding: 5px;
 }
 
 /* Bump up size of carousel content */

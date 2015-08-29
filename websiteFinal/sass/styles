@@ -12,7 +12,7 @@
 body
   padding-top: 5rem
   padding-bottom: 3rem
-  background-color: #fdfdf0
+  background-color: #90a4ae
 
 
 
@@ -36,6 +36,7 @@ hr
         //background: #607d8b
         font: 1.5rem "RobotoDraft", sans-serif
         font-weight: normal
+        color: #cfd8dc
 
 //.hvr-rectangle-out
   background: #e1e1e1
@@ -160,16 +161,16 @@ hr
 
 
 
-//#content
+#content
   background-color: white
 
 
 
-//footer
+footer
   border: 1px solid black
 
 
-//#whatIDo
+#whatIDo
   .col-xs-12,
   .col-md-4
     display: none
@@ -190,12 +191,12 @@ hr
   hr
     border: 1px solid black
 
-//#whatIDoP
+#whatIDoP
   max-width: 500px
   background-color: #00aac0
   padding: 15px
 
-//#content
+#content
   padding: 5px
 
 //Responsive
