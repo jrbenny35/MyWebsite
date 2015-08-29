@@ -27,21 +27,12 @@ hr {
 }
 
 .navbar .nav .nav-item a.nav-link {
-  background: #607d8b !important;
-  font: 1rem "RobotoDraft", sans-serif;
+  font: 1.5rem "RobotoDraft", sans-serif;
   font-weight: normal;
-}
-
-.hvr-rectangle-out {
-  background: #e1e1e1;
 }
 
 .hvr-rectangle-out:before {
   background: #cfd8dc;
-}
-
-.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
-  color: white;
 }
 
 .navbar .nav-pills .active {
@@ -107,9 +98,13 @@ hr {
 }
 
 .carousel .carousel-inner .carousel-item .container .carousel-caption h1, .carousel .carousel-inner .carousel-item .container .carousel-caption p {
-  height: 42rem;
-  background-color: #777;
-  font: 10px "RobotoDraft", sans-serif;
+  height: 2rem;
+  font: 20px "RobotoDraft", sans-serif;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777777;
 }
 
 .carousel-item img {
@@ -117,7 +112,7 @@ hr {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  max-height: 32rem;
   display: block;
 }
 
@@ -146,46 +141,6 @@ hr {
 .socialMedia .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-}
-
-#content {
-  background-color: white;
-}
-
-.jumbotron {
-  padding: 10px;
-  border: 5px solid #405A7F;
-}
-
-footer {
-  border: 1px solid black;
-}
-
-#whatIDo .col-xs-12,
-#whatIDo .col-md-4 {
-  display: none;
-  padding: 20px;
-}
-#whatIDo h2,
-#whatIDo h3 {
-  text-align: center;
-  padding: 5px;
-}
-#whatIDo p {
-  text-align: center;
-}
-#whatIDo hr {
-  border: 1px solid black;
-}
-
-#whatIDoP {
-  max-width: 500px;
-  background-color: #00aac0;
-  padding: 15px;
-}
-
-#content {
-  padding: 5px;
 }
 
 /* Bump up size of carousel content */
