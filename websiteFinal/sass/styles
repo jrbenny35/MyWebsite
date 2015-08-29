@@ -50,6 +50,12 @@ hr
     font: 3rem "RobotoDraft", sans-serif
     font-weight: bold
 
+#myPortfolio
+  .card
+    .btn
+      color: #ffffff
+      background-color: #26a69a
+
 //navbar
 .navbar-brand
   height: 50px
