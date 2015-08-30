@@ -25,16 +25,16 @@ html
         img(src="websiteFinal/images/logo.jpg")
       ul.nav.nav-pills
         li.nav-item.active.hvr-rectangle-out
-          a.nav-link(href="#") Home
+          a.nav-link(href="#", data-scroll="myCarousel") Home
             span.sr-only (Current)
         li.nav-item.hvr-rectangle-out
-          a.nav-link(href="#Resume") Resume
+          a.nav-link(href="#Resume", data-scroll="myResume") Resume
         li.nav-item.hvr-rectangle-out
-          a.nav-link(href="#") Info
+          a.nav-link(href="#", data-scroll="myBio") Info
         li.nav-item.hvr-rectangle-out
-          a.nav-link(href="#") About
+          a.nav-link(href="#", data-scroll="#") About
         li.nav-item.hvr-rectangle-out
-          a.nav-link(href="#") Contact
+          a.nav-link(href="#", data-scroll="contactMe") Contact
 
     //Carousel
     .container
@@ -205,6 +205,9 @@ html
 
     //JQuery Js Must be first
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+    //Scroll Js
+    //script(type="text/javascript" src="//cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js")
+    script(type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js")
     //BootStrapJS
     script(type="text/javascript" src="js/bootstrap4/bootstrap.min.js")
     //Custom JS

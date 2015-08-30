@@ -4,21 +4,17 @@
 
 
 
-$(function (){
+$(document).ready(function(){
 
-     $('#whatIDoTrig').on('click', function () {
-         var slideIt = $('#whatIDo').find('.col-xs-12');
-         $(slideIt).first().slideDown(500);
-         $(slideIt).first().next().slideDown(750);
-         $(slideIt).first().next().next().slideDown(1000);
+    $('.navbar .nav .nav-item .nav-link').on('click', function(){
 
-            $("html, body").animate({
-                scrollTop: $("footer").offset().top
-            }, 1500);
+        var whereToScroll = $(this).attr('data-scroll');
 
-         $(this).fadeOut(1000);
-
-     });
+        $.scrollTo(document.getElementById(whereToScroll), 700, {offset:-80});
 
 
-    });//End document ready
+    });//End function
+
+
+
+});
