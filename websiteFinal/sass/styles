@@ -59,6 +59,16 @@ hr
 #firstContainer
   background-color: white
   
+#firstContainer
+  .jumbotron
+    border: 1px solid black
+    margin-bottom: 0rem
+    
+
+#firstContainer
+  .carousel
+
+
   
   
   
@@ -74,12 +84,13 @@ hr
     max-height: 32rem
 
 #firstContainer
-  .col-md-push-7
+  .col-md-5
     .container
       text-align: center
       background-color: white
       border: 1px solid black
       height: 5rem
+      padding: 1rem
       
 #collapsingNavbar
   padding: 1rem
