@@ -56,6 +56,34 @@ hr
       color: #ffffff
       background-color: #26a69a
 
+#firstContainer
+  background-color: white
+  
+  
+  
+  
+#firstContainer
+  .col-md-7, .col-md-5
+    margin-top: 1rem
+    margin-left: 0rem
+    margin-right: 0rem
+    padding: 0rem
+      
+#firstContainer
+  .col-md-5
+    max-height: 32rem
+
+#firstContainer
+  .col-md-push-7
+    .container
+      text-align: center
+      background-color: white
+      border: 1px solid black
+      height: 5rem
+      
+#collapsingNavbar
+  padding: 1rem
+
 //navbar
 .navbar-brand
   height: 50px
@@ -128,6 +156,7 @@ hr
   padding: 5px
   border: 1px solid #405A7F
   background-color: white
+ 
 
 .carousel
   .carousel-inner
@@ -139,17 +168,13 @@ hr
             font: 20px "RobotoDraft", sans-serif
 
 .carousel-item
-  height: 32rem
+  height: 16rem
   background-color: #777777
 
 .carousel-item
   img
-    position: absolute
-    top: 0
-    left: 0
-    min-width: 100%
-    max-height: 34rem
-    display: block
+    width: 100%
+    height: 100%
 
 
 

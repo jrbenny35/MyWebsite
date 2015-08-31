@@ -18,7 +18,7 @@
     <link href="css/styles/styles.css" rel="stylesheet">
   </head>
   <body class="morePadding">
-    <nav class="navbar navbar-default navbar-fixed-top navbar-material-blue-grey-500"><a href="#" class="navbar-brand"><img src="websiteFinal/images/logo.jpg"></a>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-material-blue-grey-500"><a href="#" class="navbar-brand"><img src="websiteFinal/images/logo.jpg"></a>
       <ul class="nav nav-pills">
         <li class="nav-item active hvr-rectangle-out"><a href="#" data-scroll="myCarousel" class="nav-link">Home<span class="sr-only">(Current)</span></a></li>
         <li class="nav-item hvr-rectangle-out"><a href="#Resume" data-scroll="myResume" class="nav-link">Resume</a></li>
@@ -28,42 +28,62 @@
       </ul>
     </nav>
     <!--Carousel-->
-    <div class="container">
-      <div id="myCarousel" data-ride="carousel" class="carousel slide">
-        <ol class="carousel-indicators">
-          <li data-target="myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="myCarousel" data-slide-to="1"></li>
-          <li data-target="myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div role="listbox" class="carousel-inner">
-          <div class="carousel-item active"><img src="websiteFinal/images/business-handshake.jpg" class="first-slide img-responsive">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Welcome!</h1>
-                <p>I hope you enjoy your stay! Scroll down for more or click the link!</p>
-                <p href="#AboutMe" role="button" class="btn btn-secondary btn-raised">About me</p>
-              </div>
-            </div>
+    <div id="firstContainer" class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="jumbotron">
+            <h1>Benjamin Forehand</h1>
+            <p>
+              Cool page with more indepth about me. Stuffffffffffffffffffffff
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt accumsan odio, ac vulputate turpis varius a. Donec pharetra ornare leo, eu malesuada massa bibendum at. Pellentesque luctus mauris ante, et facilisis dui pretium ac. Duis turpis dolor, lacinia sed auctor non, sodales nec dui. Maecenas lobortis lorem a urna euismod, et fermentum dolor gravida. Ut efficitur molestie maximus. Mauris in imperdiet dolor. Sed in aliquam massa. Donec eleifend, nibh vitae pellentesque tincidunt, odio sem volutpat est, vitae eleifend velit nisl id tellus. Pellentesque posuere ligula ligula, vitae cursus dolor lacinia et. Pellentesque vel ipsum vulputate leo viverra posuere. Aenean nec risus tellus. Praesent viverra dapibus sapien et faucibus.
+              Proin quis mi ut ligula semper vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ex augue, pellentesque et dui non, ultricies rhoncus massa. Cras sem orci, dapibus sed quam vitae, sodales scelerisque felis. Suspendisse ut euismod eros. Nam molestie ullamcorper risus a ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus mauris sem, egestas sit amet sollicitudin ut, blandit eu enim. Donec pretium nisl ac laoreet dapibus. Proin eu est aliquam, congue mauris aliquet, scelerisque dui.
+              sum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, quam euismod pretium ultrices, erat elit interdum nunc, vitae euismod nisl ligula eu lorem. Suspendisse augue nulla, scelerisque vitae venenatis ut, bibendum quis nibh. Pellentesque id pellentesque magna, vel convallis erat. In egestas orci eu lorem consequat dapibus. Sed ac molestie metus. Sed eget scelerisque turpis. In vitae lobortis eros, sed vulputate enim. Fusce a nisl pharetra, eleifend enim ut, feugiat nunc. Nullam pretium et lectus ac hendrerit. Nulla facilisi.
+            </p>
           </div>
-          <div class="carousel-item"><img src="websiteFinal/images/sign-here.jpg" class="img-responsive">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Contact Me</h1>
-                <p>Contact form if you would like to get in touch with me</p>
-                <p href="#Contact" role="button" class="btn btn-secondary btn-raised">Contact Me</p>
+        </div>
+        <div class="col-md-5">
+          <div id="myCarousel" data-ride="carousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="myCarousel" data-slide-to="1"></li>
+              <li data-target="myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div role="listbox" class="carousel-inner">
+              <div class="carousel-item active"><img src="websiteFinal/images/business-handshake.jpg" class="first-slide img-responsive">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Welcome!</h1>
+                    <p>I hope you enjoy your stay! Scroll down for more or click the link!</p>
+                    <p href="#AboutMe" role="button" class="btn btn-secondary btn-raised">About me</p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="carousel-item"><img src="websiteFinal/images/930RWB5.jpg" class="img-responsive">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Current Projects</h1>
-                <p>Check out some of the things I am working on!</p>
-                <p href="#Projects" role="button" class="btn btn-secondary btn-raised">Projects</p>
+              <div class="carousel-item"><img src="websiteFinal/images/sign-here.jpg" class="img-responsive">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Contact Me</h1>
+                    <p>Contact form if you would like to get in touch with me</p>
+                    <p href="#Contact" role="button" class="btn btn-secondary btn-raised">Contact Me</p>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="carousel-item"><img src="websiteFinal/images/930RWB5.jpg" class="img-responsive">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>Current Projects</h1>
+                    <p>Check out some of the things I am working on!</p>
+                    <p href="#Projects" role="button" class="btn btn-secondary btn-raised">Projects</p>
+                  </div>
+                </div>
+              </div>
+            </div><a href="#myCarousel" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span Previous class="sr-only"></span></a><a href="#myCarousel" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span Next class="sr-only"></span></a>
           </div>
-        </div><a href="#myCarousel" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span Previous class="sr-only"></span></a><a href="#myCarousel" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span Next class="sr-only"></span></a>
+        </div>
+        <div class="col-md-5">
+          <div class="container">
+            <h1>Stay In touch</h1>
+          </div>
+        </div>
       </div>
     </div>
     <!--Social Media Links-->
@@ -213,7 +233,6 @@
     <!--JQuery Js Must be first-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--Scroll Js-->
-    <!--script(type="text/javascript" src="//cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js")-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
     <!--BootStrapJS-->
     <script type="text/javascript" src="js/bootstrap4/bootstrap.min.js"></script>

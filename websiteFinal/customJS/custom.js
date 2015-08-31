@@ -11,7 +11,7 @@ $(document).ready(function(){
         var whereToScroll = $(this).attr('data-scroll');
         var windowSize = $(window).width();
 
-
+        //Scroll based on widow size.
         if(windowSize < 800) {
             $.scrollTo(document.getElementById(whereToScroll), 700, {offset: -125});
         } else{$.scrollTo(document.getElementById(whereToScroll), 700, {offset: -80});}//end if
