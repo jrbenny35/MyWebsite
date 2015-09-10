@@ -28,7 +28,7 @@
       </ul>
     </nav>
     <!--Carousel-->
-    <div id="firstContainer" class="container">
+    <div id="firstContainer" class="container shadow-z-4">
       <div class="row">
         <div class="col-md-7">
           <div class="jumbotron">
@@ -41,7 +41,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 shadow-z-4">
           <div id="myCarousel" data-ride="carousel" class="carousel slide">
             <ol class="carousel-indicators">
               <li data-target="myCarousel" data-slide-to="0" class="active"></li>
@@ -49,39 +49,16 @@
               <li data-target="myCarousel" data-slide-to="2"></li>
             </ol>
             <div role="listbox" class="carousel-inner">
-              <div class="carousel-item active"><img src="websiteFinal/images/business-handshake.jpg" class="first-slide img-responsive">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Welcome!</h1>
-                    <p>I hope you enjoy your stay! Scroll down for more or click the link!</p>
-                    <p href="#AboutMe" role="button" class="btn btn-secondary btn-raised">About me</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item"><img src="websiteFinal/images/sign-here.jpg" class="img-responsive">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Contact Me</h1>
-                    <p>Contact form if you would like to get in touch with me</p>
-                    <p href="#Contact" role="button" class="btn btn-secondary btn-raised">Contact Me</p>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item"><img src="websiteFinal/images/930RWB5.jpg" class="img-responsive">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>Current Projects</h1>
-                    <p>Check out some of the things I am working on!</p>
-                    <p href="#Projects" role="button" class="btn btn-secondary btn-raised">Projects</p>
-                  </div>
-                </div>
-              </div>
+              <div class="carousel-item active"><img src="websiteFinal/images/business-handshake.jpg" class="first-slide img-responsive"></div>
+              <div class="carousel-item"><img src="websiteFinal/images/sign-here.jpg" class="img-responsive"></div>
+              <div class="carousel-item"><img src="websiteFinal/images/930RWB5.jpg" class="img-responsive"></div>
             </div><a href="#myCarousel" role="button" data-slide="prev" class="left carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span Previous class="sr-only"></span></a><a href="#myCarousel" role="button" data-slide="next" class="right carousel-control"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span><span Next class="sr-only"></span></a>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 hidden-sm-down">
           <div class="container">
             <h1>Stay In touch</h1>
+            <p class="btn btn-secondary btn-raised btn-material-teal-400 hvr-sweep-to-bottom">Click here</p>
           </div>
         </div>
       </div>
@@ -98,17 +75,17 @@
         <div class="col-lg-4"><img src="websiteFinal/images/linkedin.png" alt="Linked in" height="140" width="140" class="img-circle">
           <h2>Linked in Profile</h2>
           <p>This is my linked in</p>
-          <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised">Go take a Look!</p>
+          <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised hvr-sweep-to-bottom">Go take a Look!</p>
         </div>
         <div class="col-lg-4 leftright"><img src="websiteFinal/images/google_plus_logo.jpg" alt="Linked in" height="140" width="140" class="img-circle">
           <h2>Google+</h2>
           <p>Add me here as I'll constantly be updating</p>
-          <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised">Go take a Look!</p>
+          <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised hvr-sweep-to-bottom">Go take a Look!</p>
         </div>
         <div class="col-lg-4"><img src="websiteFinal/images/github_icon.png" alt="Linked in" height="140" width="140" class="img-circle">
           <h2>Github</h2>
           <p>Come and see my current projects. Don't be afraid to help!</p>
-          <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised">Go take a Look!</p>
+          <p href="#LinkedIn" role="button" class="btn btn-secondary btn-raised hvr-sweep-to-bottom">Go take a Look!</p>
         </div>
       </div>
     </div>
@@ -118,7 +95,7 @@
           <div class="col-md-7">
             <h2 class="featurette-heading">Resume<span class="text-muted"> It's outstanding, trust me.</span></h2>
             <p class="lead">This is where I will put my resume link.</p>
-            <p class="btn btn-default btn-raised">Click Here</p>
+            <p class="btn btn-default btn-raised hvr-sweep-to-bottom">Click Here</p>
           </div>
           <div class="col-md-5"><img src="websiteFinal/images/github_icon.png" alt="Document image" width="400" height="400" class="featurette-image img-responsive center-block"></div>
         </div>
@@ -153,6 +130,9 @@
               <div class="card-block">
                 <h4 class="card-title">This is a Card</h4>
                 <p class="card-text">Info about this card</p>
+                <div class="span text-muted">
+                  <p>Updated on...</p>
+                </div>
                 <p class="btn btn-secondary btn-raised hvr-underline-from-center">View</p>
               </div>
             </div>
@@ -163,6 +143,9 @@
               <div class="card-block">
                 <h4 class="card-title">This is a Card</h4>
                 <p class="card-text">Info about this card</p>
+                <div class="span text-muted">
+                  <p>Updated on...</p>
+                </div>
                 <p class="btn btn-secondary btn-raised hvr-underline-from-center">View</p>
               </div>
             </div>
@@ -173,6 +156,9 @@
               <div class="card-block">
                 <h4 class="card-title">This is a card</h4>
                 <p class="card-text">Info about this card</p>
+                <div class="span text-muted">
+                  <p>Updated on...</p>
+                </div>
                 <p class="btn btn-secondary btn-raised hvr-underline-from-center">View</p>
               </div>
             </div>
@@ -214,18 +200,18 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container shadow-z-4 addMargin">
-      <hr class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Blog<span class="text-muted"> If you've made it this far...don't stop!</span></h2>
-          <p class="lead">Blog containing posts about technology mainly</p>
+      <div class="container shadow-z-4 addMargin">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Blog<span class="text-muted"> If you've made it this far...don't stop!</span></h2>
+            <p class="lead">Blog containing posts about technology mainly</p>
+          </div>
+          <div class="col-md-5"><img src="websiteFinal/images/github_icon.png" alt="Document image" width="400" height="400" class="featurette-image img-responsive center-block"></div>
         </div>
-        <div class="col-md-5"><img src="websiteFinal/images/github_icon.png" alt="Document image" width="400" height="400" class="featurette-image img-responsive center-block"></div>
       </div>
     </div>
-    <div id="myFooter" class="container">
+    <div id="myFooter" class="container-fluid">
       <footer class="morepadding">
         <p>&copy; 2015 Coded by Benjamin Forehand Jr</p>
       </footer>
@@ -237,6 +223,6 @@
     <!--BootStrapJS-->
     <script type="text/javascript" src="js/bootstrap4/bootstrap.min.js"></script>
     <!--Custom JS-->
-    <script type="text/javascript" src="websiteFinal/customJS/custom.js"></script>
+    <script type="text/javascript" src="websiteFinal/customJS/custom.js"></script><script type='text/javascript' id="__bs_script__">//<![CDATA[
   </body>
 </html>

@@ -26,14 +26,26 @@ hr {
   padding: 0;
 }
 
+#content .btn {
+  background-color: #26a69a;
+}
+
 #myBio {
   background-color: white;
   padding: 1rem;
 }
 
+#myBio .col-md-7 {
+  border-right: 1px solid black;
+}
+
 #myResume {
   background-color: white;
   padding: 1rem;
+}
+
+#myResume .btn {
+  background-color: #26a69a;
 }
 
 #myPortfolio {
@@ -59,7 +71,7 @@ hr {
 }
 
 #firstContainer .jumbotron {
-  border: 1px solid black;
+  border-right: 2px solid black;
   margin-bottom: 0rem;
 }
 
@@ -71,15 +83,20 @@ hr {
 }
 
 #firstContainer .col-md-5 {
-  max-height: 32rem;
+  margin-top: 6rem;
+  max-height: 34rem;
 }
 
 #firstContainer .col-md-5 .container {
+  margin-top: -3rem;
   text-align: center;
   background-color: white;
-  border: 1px solid black;
   height: 5rem;
   padding: 1rem;
+}
+
+#firstContainer .col-md-5 .container .btn .hvr-sweep-to-bottom:before {
+  background: #00796b !important;
 }
 
 #collapsingNavbar {
@@ -99,6 +116,10 @@ hr {
 
 .hvr-rectangle-out:before {
   background: #455a64;
+}
+
+.hvr-fade:hover {
+  background-color: white;
 }
 
 .navbar .nav-pills .active {
@@ -149,7 +170,6 @@ hr {
 
 .carousel {
   padding: 5px;
-  border: 1px solid #405A7F;
   background-color: white;
 }
 
