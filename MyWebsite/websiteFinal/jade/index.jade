@@ -1,0 +1,224 @@
+// Code by jrbenny35
+
+
+
+doctype html
+html
+  head
+    title
+    //Mobile responsive coding
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    //Bootstrap Css
+    link(href="css/bootstrap4/bootstrap.css", rel="stylesheet")
+    //Custom Css
+    link(href="css/styles/material-fullpalette.css" rel="stylesheet")
+    link(href="css/styles/material-wfont.css" rel="stylesheet")
+    link(href="css/hover.css" rel="stylesheet")
+    link(href="css/styles/styles.css" rel="stylesheet")
+
+
+  body.morePadding
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-material-blue-grey-500#mainNav
+      a.navbar-brand(href="#")
+        img(src="websiteFinal/images/logo.jpg")
+      ul.nav.nav-pills
+        li.nav-item.active.hvr-rectangle-out
+          a.nav-link(href="#", data-scroll="myCarousel") Home
+            span.sr-only (Current)
+        li.nav-item.hvr-rectangle-out
+          a.nav-link(href="#Resume", data-scroll="myResume") Resume
+        li.nav-item.hvr-rectangle-out
+          a.nav-link(href="#", data-scroll="myBio") Bio
+        li.nav-item.hvr-rectangle-out
+          a.nav-link(href="#", data-scroll="myPortfolio") Portfolio
+        li.nav-item.hvr-rectangle-out
+          a.nav-link(href="#", data-scroll="contactMe") Contact
+
+
+    //Carousel
+    .container.shadow-z-4#firstContainer
+      .row
+        .col-md-7
+          .jumbotron
+            h1 Benjamin Forehand
+            p.
+              Cool page with more indepth about me. Stuffffffffffffffffffffff
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt accumsan odio, ac vulputate turpis varius a. Donec pharetra ornare leo, eu malesuada massa bibendum at. Pellentesque luctus mauris ante, et facilisis dui pretium ac. Duis turpis dolor, lacinia sed auctor non, sodales nec dui. Maecenas lobortis lorem a urna euismod, et fermentum dolor gravida. Ut efficitur molestie maximus. Mauris in imperdiet dolor. Sed in aliquam massa. Donec eleifend, nibh vitae pellentesque tincidunt, odio sem volutpat est, vitae eleifend velit nisl id tellus. Pellentesque posuere ligula ligula, vitae cursus dolor lacinia et. Pellentesque vel ipsum vulputate leo viverra posuere. Aenean nec risus tellus. Praesent viverra dapibus sapien et faucibus.
+              Proin quis mi ut ligula semper vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ex augue, pellentesque et dui non, ultricies rhoncus massa. Cras sem orci, dapibus sed quam vitae, sodales scelerisque felis. Suspendisse ut euismod eros. Nam molestie ullamcorper risus a ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus mauris sem, egestas sit amet sollicitudin ut, blandit eu enim. Donec pretium nisl ac laoreet dapibus. Proin eu est aliquam, congue mauris aliquet, scelerisque dui.
+              sum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, quam euismod pretium ultrices, erat elit interdum nunc, vitae euismod nisl ligula eu lorem. Suspendisse augue nulla, scelerisque vitae venenatis ut, bibendum quis nibh. Pellentesque id pellentesque magna, vel convallis erat. In egestas orci eu lorem consequat dapibus. Sed ac molestie metus. Sed eget scelerisque turpis. In vitae lobortis eros, sed vulputate enim. Fusce a nisl pharetra, eleifend enim ut, feugiat nunc. Nullam pretium et lectus ac hendrerit. Nulla facilisi.
+        .col-md-5.shadow-z-4
+          div#myCarousel.carousel.slide(data-ride="carousel")
+            ol.carousel-indicators
+              li.active(data-target="myCarousel", data-slide-to="0")
+              li(data-target="myCarousel", data-slide-to="1")
+              li(data-target="myCarousel", data-slide-to="2")
+            .carousel-inner(role="listbox")
+              .carousel-item.active
+                img.first-slide.img-responsive(src="websiteFinal/images/business-handshake.jpg")
+
+              .carousel-item
+                img.img-responsive(src="websiteFinal/images/sign-here.jpg")
+
+              .carousel-item
+                img.img-responsive(src="websiteFinal/images/930RWB5.jpg")
+
+            a.left.carousel-control(href="#myCarousel", role="button", data-slide="prev")
+              span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+              span.sr-only(Previous)
+            a.right.carousel-control(href="#myCarousel", role="button", data-slide="next")
+              span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
+              span.sr-only(Next)
+        .col-md-5.hidden-sm-down
+          .container
+            h1 Stay In touch
+            p.btn.btn-secondary.btn-raised.btn-material-teal-400.hvr-sweep-to-bottom Click here
+
+    //Social Media Links
+    div.container.socialMedia.addMargin.shadow-z-4.addMargin#content
+      .row
+        .col-lg-12.text-center.morePadding.center-block
+          h1 Are we connected?
+          hr
+      .row
+        .col-lg-4
+          img.img-circle(src="websiteFinal/images/linkedin.png", alt="Linked in", height='140', width="140")
+          h2 Linked in Profile
+          p This is my linked in
+          p.btn.btn-secondary.btn-raised.hvr-sweep-to-bottom(href="#LinkedIn", role="button") Go take a Look!
+        .col-lg-4.leftright
+          img.img-circle(src="websiteFinal/images/google_plus_logo.jpg", alt="Linked in", height='140', width="140")
+          h2 Google+
+          p Add me here as I'll constantly be updating
+          p.btn.btn-secondary.btn-raised.hvr-sweep-to-bottom(href="#LinkedIn", role="button") Go take a Look!
+        .col-lg-4
+          img.img-circle(src="websiteFinal/images/github_icon.png", alt="Linked in", height='140', width="140")
+          h2 Github
+          p Come and see my current projects. Don't be afraid to help!
+          p.btn.btn-secondary.btn-raised.hvr-sweep-to-bottom(href="#LinkedIn", role="button") Go take a Look!
+
+    .container-fluid.shadow-z-4.addMargin#myResume
+      .container
+        .row.featurette
+          .col-md-7
+            h2.featurette-heading Resume
+              span.text-muted  It's outstanding, trust me.
+            p.lead This is where I will put my resume link.
+            p.btn.btn-default.btn-raised.hvr-sweep-to-bottom Click Here
+          .col-md-5
+            img.featurette-image.img-responsive.center-block(src="websiteFinal/images/github_icon.png", alt="Document image", width="400", height="400")
+
+    .container.shadow-z-4.addMargin#myBio
+      .row.featurette
+        .col-md-7
+          h2.featurette-heading Bio
+          h3 Benjamin Forehand Jr
+          hr
+          p.lead.
+            Cool page with more indepth about me. Stuffffffffffffffffffffff
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt accumsan odio, ac vulputate turpis varius a. Donec pharetra ornare leo, eu malesuada massa bibendum at. Pellentesque luctus mauris ante, et facilisis dui pretium ac. Duis turpis dolor, lacinia sed auctor non, sodales nec dui. Maecenas lobortis lorem a urna euismod, et fermentum dolor gravida. Ut efficitur molestie maximus. Mauris in imperdiet dolor. Sed in aliquam massa. Donec eleifend, nibh vitae pellentesque tincidunt, odio sem volutpat est, vitae eleifend velit nisl id tellus. Pellentesque posuere ligula ligula, vitae cursus dolor lacinia et. Pellentesque vel ipsum vulputate leo viverra posuere. Aenean nec risus tellus. Praesent viverra dapibus sapien et faucibus.
+            Proin quis mi ut ligula semper vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ex augue, pellentesque et dui non, ultricies rhoncus massa. Cras sem orci, dapibus sed quam vitae, sodales scelerisque felis. Suspendisse ut euismod eros. Nam molestie ullamcorper risus a ultricies. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus mauris sem, egestas sit amet sollicitudin ut, blandit eu enim. Donec pretium nisl ac laoreet dapibus. Proin eu est aliquam, congue mauris aliquet, scelerisque dui.
+            Ut pretium convallis fermentum. Sed nibh tortor, suscipit quis lacinia a, lacinia vel urna. Sed nibh nunc, efficitur a malesuada sit amet, vulputate ac diam. Integer nec sagittis nisl, nec posuere diam. Nam ut pellentesque purus. Proin non molestie tortor. Sed posuere condimentum elit vitae consectetur. Mauris eu semper nunc. Morbi pellentesque sollicitudin massa, at viverra odio commodo sed. Nunc efficitur magna sed eros pulvinar, id tincidunt libero iaculis. Curabitur velit orci, fringilla non volutpat et, mattis quis nunc. Aliquam ut commodo sem. Etiam egestas dui id mauris fringilla, et congue lectus aliquet. Aliquam erat volutpat. Nulla rhoncus nulla mauris, laoreet luctus nunc ultrices eget.
+            Pellentesque viverra ex blandit velit maximus molestie. Praesent quis posuere nibh, sed ornare nisl. Praesent nec sapien sagittis, porta mi vel, egestas turpis. Fusce magna nisl, pellentesque nec faucibus nec, porta ac risus. Phasellus dui sapien, tincidunt ut pulvinar sit amet, elementum sed arcu. Cras ornare mi nisl, id aliquet odio malesuada vel. Pellentesque turpis lorem, viverra ut neque nec, varius suscipit ipsum. Cras scelerisque augue ante, et laoreet purus convallis a. Integer accumsan urna nec tellus pretium facilisis. Vestibulum vitae ipsum ac dui porta congue. Integer lacinia, risus a lobortis gravida, nunc erat convallis massa, a consectetur eros libero sit amet sem. Vestibulum erat turpis, ultricies id facilisis mollis, volutpat et risus. Nunc vel varius nunc. Etiam leo nisl, semper sed lectus id, molestie ullamcorper quam. Maecenas ullamcorper porttitor mi et blandit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula, quam euismod pretium ultrices, erat elit interdum nunc, vitae euismod nisl ligula eu lorem. Suspendisse augue nulla, scelerisque vitae venenatis ut, bibendum quis nibh. Pellentesque id pellentesque magna, vel convallis erat. In egestas orci eu lorem consequat dapibus. Sed ac molestie metus. Sed eget scelerisque turpis. In vitae lobortis eros, sed vulputate enim. Fusce a nisl pharetra, eleifend enim ut, feugiat nunc. Nullam pretium et lectus ac hendrerit. Nulla facilisi.
+        .col-md-5
+          img.img-responsive.hidden-xs-down.hidden-sm-down(src="websiteFinal/images/github_icon.png", alt="Document image" , width="400", height="400")
+          img.img-responsive.hidden-xs-down.hidden-sm-down(src="websiteFinal/images/github_icon.png", alt="Document image" , width="400", height="400")
+          img.img-responsive.hidden-xs-down.hidden-sm-down(src="websiteFinal/images/github_icon.png", alt="Document image" , width="400", height="400")
+          img.img-responsive.hidden-xs-down.hidden-sm-down(src="websiteFinal/images/github_icon.png", alt="Document image" , width="400", height="400")
+          img.img-responsive.hidden-xs-down.hidden-sm-down(src="websiteFinal/images/github_icon.png", alt="Document image" , width="400", height="400")
+
+    .container.shadow-z-4.addMargin#myPortfolio
+      h1 My Portfolio
+      hr.featurette-divider
+      .container
+        .row
+          .col-lg-4
+            .card.shadow-z-2
+              img.card-img-top(src="websiteFinal/images/github_icon.png", alt="Document image" , width="300", height="200")
+              hr
+              .card-block
+                h4.card-title This is a Card
+                p.card-text.
+                  Info about this card
+                .span.text-muted
+                  p Updated on...
+                p.btn.btn-secondary.btn-raised.hvr-underline-from-center View
+          .col-lg-4
+            .card.shadow-z-2
+              img.card-img-top(src="websiteFinal/images/github_icon.png", alt="Document image" , width="300", height="200")
+              hr
+              .card-block
+                h4.card-title This is a Card
+                p.card-text.
+                  Info about this card
+                .span.text-muted
+                  p Updated on...
+                p.btn.btn-secondary.btn-raised.hvr-underline-from-center View
+          .col-lg-4
+            .card.shadow-z-2
+              img.card-img-top(src="websiteFinal/images/github_icon.png", alt="Document image" , width="300", height="200")
+              hr
+              .card-block
+                h4.card-title This is a card
+                p.card-text.
+                  Info about this card
+                .span.text-muted
+                  p Updated on...
+                p.btn.btn-secondary.btn-raised.hvr-underline-from-center View
+        hr
+      .container
+        .row
+          .col-lg-4
+            .card.shadow-z-2
+              img.card-img-top(src="websiteFinal/images/github_icon.png", alt="Document image" , width="300", height="200")
+              hr
+              .card-block
+                h4.card-title This is a Card
+                p.card-text.
+                  Info about this card
+                p.btn.btn-secondary.btn-raised.hvr-underline-from-center View
+          .col-lg-4
+            .card.shadow-z-2
+              img.card-img-top(src="websiteFinal/images/github_icon.png", alt="Document image" , width="300", height="200")
+              hr
+              .card-block
+                h4.card-title This is a Card
+                p.card-text.
+                  Info about this card
+                p.btn.btn-secondary.btn-raised.hvr-underline-from-center View
+          .col-lg-4
+            .card.shadow-z-2
+              img.card-img-top(src="websiteFinal/images/github_icon.png", alt="Document image" , width="300", height="200")
+              hr
+              .card-block
+                h4.card-title This is a Card
+                p.card-text.
+                  Info about this card
+                p.btn.btn-secondary.btn-raised.hvr-underline-from-center View
+
+      .container.shadow-z-4.addMargin
+        hr.featurette-divider
+        .row.featurette
+          .col-md-7
+            h2.featurette-heading Blog
+              span.text-muted  If you've made it this far...don't stop!
+            p.lead Blog containing posts about technology mainly
+          .col-md-5
+            img.featurette-image.img-responsive.center-block(src="websiteFinal/images/github_icon.png", alt="Document image", width="400", height="400")
+
+    .container-fluid#myFooter
+      footer.morepadding
+        p &copy; 2015 Coded by Benjamin Forehand Jr
+
+    //JQuery Js Must be first
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+    //Scroll Js
+    script(type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js")
+    //BootStrapJS
+    script(type="text/javascript" src="js/bootstrap4/bootstrap.min.js")
+    //Custom JS
+    script(type="text/javascript" src="websiteFinal/customJS/custom.js")
+    <script type='text/javascript' id="__bs_script__">//<![CDATA[
+    
