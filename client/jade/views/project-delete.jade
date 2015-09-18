@@ -1,0 +1,12 @@
+//
+   Created by root on 9/18/15.
+
+doctype
+html
+  head
+  body
+    form(role="form")
+      p Are you sure you want to delete {{ project.title }} ?
+      .form-group
+        input.btn.btn-danger(type="submit", ng-click="deleteProject()", value="Yes")
+        button.btn.btn-defult(ng-click="back()", value="No") No

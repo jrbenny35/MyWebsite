@@ -1,0 +1,21 @@
+//
+   Created by root on 9/17/15.
+
+html
+  head
+  body
+    form(role = "form", ng-controller="ProjectAddCtrl")
+      h1 Create New Project
+      .form-group
+        label.control-label(for = "title") Title
+        input.form-control#title(type = "text", ng-model = "project.title", placeholder = "Enter the project title")
+      .form-group
+        label.control-label(for = "description") Description
+        input.form-control#title(type = "text", ng-model = "project.description", placeholder = "Enter the project description")
+      .form-group
+        label.control-label(for = "updated_On") Updated on
+        input.form-control#title(type = "text", ng-model = "project.updated_On", placeholder = "Enter when the project was updated")
+      .form-group
+        label.control-label(for = "link") Link to Project
+        input.form-control#title(type = "text", ng-model = "project.link", placeholder = "Enter the link to the project")
+      input.btn.btn-primary(type = "submit", ng-click="saveProject()", value= "Save")

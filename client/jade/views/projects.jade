@@ -1,0 +1,25 @@
+//
+   Created by root on 9/17/15.
+doctype
+html
+  head
+  body
+    .container.shadow-z-4#myPortfolio
+      h1 My Portfolio
+      hr
+      .container
+        .row
+          .col-lg-4(ng-repeat= "project in projects.projects")
+            .card.shadow-z-2
+              img.card-img-top(src="/images/yeoman.png", alt="Document image")
+              hr
+              .card-block
+                h4.card-title {{ project.title }}
+                p.card-text.
+                  {{ project.description }}
+                .span.text-muted Updated on:
+                  p {{ project.updated_On }}
+                a(href="{{ project.link }}", role= "button").btn.btn-default View
+
+
+
