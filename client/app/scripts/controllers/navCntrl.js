@@ -20,6 +20,6 @@ angular.module('clientApp')
 
     $scope.isActive = function (dest) {
       return dest === $location.path();
-    }
+    };
 
   });
