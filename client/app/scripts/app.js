@@ -38,7 +38,7 @@ angular
         controller: 'ProjectAddCtrl',
         controllerAs: 'projectAdd'
       })
-      .when('/admin/projects/:id', {
+      .when('/projects/:id', {
         templateUrl: 'views/project-view.html',
         controller: 'ProjectViewCtrl',
         controllerAs: 'projectView'
@@ -52,6 +52,17 @@ angular
         templateUrl: 'views/project-edit.html',
         controller: 'ProjectEditCtrl',
         controllerAs: 'projectEdit'
+      })
+      .when('/admin/projects/:id', {
+        templateUrl: 'views/project-view.html',
+        controller: 'ProjectViewCtrl',
+        controllerAs: 'projectView'
+      })
+
+      .when('/admin', {
+        templateUrl: 'views/admin.html',
+        controller: 'ProjectsCtrl',
+        controllerAs: 'projects'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,0 +1,28 @@
+//
+   Created by root on 9/18/15.
+
+doctype
+html
+  head
+  body(ng-controller="ProjectsCtrl")
+    h1 This is the administration page
+    h2 You will be allowed to edit models from this page
+    a.btn.btn-default.btn-lg(ng-href="#/admin/create/project") Create Project
+    table.table.table-striped
+      thead
+        th Model title
+        th Model description
+        th Updated on
+        th Operations
+      tbody
+        tr(ng-repeat="project in projects.projects")
+          td
+            a(ng-href = "#/projects/{{project._id}}") {{ project.title }}
+          td {{ project.description }}
+          td {{ project.updated_On }}
+          td
+            .btn-group
+              a.btn.btn-primary(ng-href = "#/admin/projects/{{project._id}}/edit")
+                span.glyphicon.glyphicon-edit
+              a.btn.btn-primary(ng-href= "#/admin/projects/{{project._id}}/delete")
+                span.glyphicon.glyphicon-remove-circle

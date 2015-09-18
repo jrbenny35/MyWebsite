@@ -1,0 +1,30 @@
+
+<!--
+Created by root on 9/18/15.
+
+--><!DOCTYPE html>
+<html>
+  <head></head>
+  <body ng-controller="ProjectsCtrl">
+    <h1>This is the administration page</h1>
+    <h2>You will be allowed to edit models from this page</h2><a ng-href="#/admin/create/project" class="btn btn-default btn-lg">Create Project</a>
+    <table class="table table-striped">
+      <thead>
+        <th>Model title</th>
+        <th>Model description</th>
+        <th>Updated on</th>
+        <th>Operations</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="project in projects.projects">
+          <td><a ng-href="#/projects/{{project._id}}">{{ project.title }}</a></td>
+          <td>{{ project.description }}</td>
+          <td>{{ project.updated_On }}</td>
+          <td>
+            <div class="btn-group"><a ng-href="#/admin/projects/{{project._id}}/edit" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a><a ng-href="#/admin/projects/{{project._id}}/delete" class="btn btn-primary"><span class="glyphicon glyphicon-remove-circle"></span></a></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
