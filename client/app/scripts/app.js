@@ -12,7 +12,8 @@ angular
   .module('clientApp', [
     'ngAnimate',
     'ngRoute',
-    'restangular' //Add restangular for rest functions
+    'restangular'//Add restangular for rest functions
+
   ])
   .config(function ($routeProvider, RestangularProvider) {//Add RestangularProvider
     RestangularProvider.setBaseUrl('http://localhost:3000');//Set url for all rest api's
@@ -65,7 +66,7 @@ angular
         controllerAs: 'projects'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
   })
   .factory('ProjectsRestangular', function(Restangular){ //Setup factory to recognize id from get as _id from db
