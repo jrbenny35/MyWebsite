@@ -38,7 +38,7 @@ mongoose.connection.once('open', function(){
         app.use(route, api(app, route))//At each route, calls module.exports function setting up API and returning middleware.
     });
 
-    console.log('Listening on port 3000 at 127.0.3000.1');
-    app.listen(3000, '127.0.3000.1');
+    console.log('Listening on port 3000');
+    app.listen(3000);
 
 });

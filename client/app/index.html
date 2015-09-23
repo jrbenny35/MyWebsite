@@ -8,9 +8,9 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
     <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-fullpalette.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-fullpalette.css"
     <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css" />
     <link rel="stylesheet" href="bower_components/hover/css/hover.css" />
     <!-- endbower -->
@@ -49,12 +49,12 @@
                   </div>
               </div>
           </div>
-      <div id="mainTitle" class="col-lg-12 well-material-blue-grey-500 shadow-z-2"><h1>Title</h1></div>
+      <div id="mainTitle" class="col-lg-12 material-blue-grey-500 shadow-z-2"><h1>Title</h1></div>
 
       <div class="container-fluid" id="side-nav-container" >
           <div class="row" id="side-nav">
-              <div class="col-lg-3 hidden-xs">
-                  <h2 class="shadow-z-1">Navigation</h2>
+              <div class="col-lg-3 col-md-3 hidden-xs">
+                  <h2 class="">Navigation</h2>
                   <ul class="nav nav-pills nav-stacked fixed" ng-controller="navCntrl">
                       <li ng-class="{'active': isActive('/home')}" class="nav-link hvr-grow"><a href="#/home" class="shadow-z-1"><h4>Home</h4></a></li><hr/>
                       <li ng-class="{active: isActive('/projects')}" class="nav-link hvr-grow"><a ng-href="#/projects/" class="shadow-z-1"><h4>Projects</h4></a></li>
@@ -63,11 +63,11 @@
 
                   </ul>
               </div>
-              <div class="col-lg-6 shadow-z-3" ng-view="" id="view">
+              <div class="col-lg-6 col-md-6 shadow-z-3" ng-view="" id="view">
 
               </div>
-              <div class="col-lg-3">
-                  <h2 class="shadow-z-1">Social Media Feed</h2>
+              <div class="col-lg-3 col-md-3">
+                  <h2 class="">Social Media Feed</h2>
                   <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae augue lacus. Aenean turpis massa, efficitur eu sodales eget, euismod vel nisi. In vel lobortis arcu, luctus accumsan nulla. Nunc tincidunt turpis non mollis vestibulum.
                       Integer lobortis non libero commodo mattis. Sed at purus ex. Duis et nisl vulputate, tempus lectus ut, viverra ante.
@@ -100,7 +100,6 @@
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-animate/angular-animate.js"></script>
         <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -109,6 +108,7 @@
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
         <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
         <script src="bower_components/lodash/lodash.js"></script>
         <script src="bower_components/restangular/dist/restangular.js"></script>
         <!-- endbower -->

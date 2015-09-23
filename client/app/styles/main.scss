@@ -1,6 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 @font-face {
@@ -80,9 +80,12 @@ body , html{
 /* Supporting marketing content */
 .marketing {
   //margin: 40px 0;
+  padding-top: 1rem;
 
-  p + h4 {
+  h4 {
     margin-top: 28px;
+    padding: 5px;
+    border-left: 3px solid #009688; //material-teal-500
   }
 }
 
@@ -107,7 +110,18 @@ body , html{
   .jumbotron {
     border-bottom: 0;
   }
+
 }
+
+hr{
+  border-bottom: 1px solid #009688 !important; //material-teal-500
+}
+
+#inTouch{
+  text-align: center;
+  padding-top: 7rem;
+}
+
 
 /* ------------------------    Nav    -------------------- */
 
@@ -146,8 +160,9 @@ body , html{
 
 #side-nav .col-lg-3 h2{
   text-align: center;
+  padding-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #009688;
 }
 
 #side-nav-container{}
@@ -156,18 +171,18 @@ body , html{
   //border: 1px solid black;
   text-align: center;
   margin-bottom: 5px;
+  background-color: #688897;
 }
 
 #view{
   padding: 3rem;
   padding-right: 3rem;
-
-
 }
 
 #myCarousel{
   height: 20rem;
   margin-right: 3rem;
+  //border-left: 2px solid #009688; //material-teal-500
 }
 
 .carousel .carousel-control {
@@ -194,14 +209,14 @@ body , html{
 
 
 .carousel-indicators li {
-  background-color: #8822b3;
+  background-color: #009688; //material-teal-500;
 }
 
 .carousel-indicators .active{
   background-color: #90a4ae;
 }
 
-.jumbotron{
-  box-shadow: 0px 0px 0px 2px;
-  border: 0px;
+#bigCallout{
+  text-align: center;
+  border-right: 1.5px solid #009688; //material-teal-500
 }

@@ -1,19 +1,18 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-7">
-            <div class="jumbotron" >
+        <div class="col-lg-7 col-md-7">
+            <div class="container-fluid" id="bigCallout">
               <h1>Welcome!</h1>
               <p class="lead">
                 <img src="images/logo.jpg" alt="My Brand"><br>
                 This is the my simple website. I hope you enjoy!
               </p>
-              <p><a class="btn btn-lg btn-success" ng-href="#/About">About Me <span class="glyphicon glyphicon-hand-left"></span></a></p>
+              <p><a class="btn btn-lg btn-success btn-material-teal-400" ng-href="#/About">About Me <span class="glyphicon glyphicon-hand-left"></span></a></p>
             </div>
-            <hr/>
 
             <div class="row marketing">
               <h2>Site contents</h2>
-              <hr/>
+
               <h4>My Resume</h4>
               <p>
                 You will find a link to the left, or a link above (if you are on mobile) to view and or download my resume.
@@ -28,7 +27,7 @@
               <p>Interested in seeing what I am up to? Check out the projects tab!</p>
             </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-5 hidden-xs">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
@@ -54,6 +53,14 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">(Next)</span>
                     </a>
+            </div>
+            <div class="container-fluid" id="inTouch">
+                <h1>
+                    Stay In touch
+                </h1>
+                <p class="btn btn-secondary btn-raised btn-material-teal-400 hvr-grow">
+                    <a href="#/contact">Click Here</a>
+                </p>
             </div>
         </div>
     </div>
