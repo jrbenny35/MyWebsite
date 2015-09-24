@@ -4,5 +4,6 @@
 
 module.exports = {
   movie: require('./Movie.js'),
-  projects: require('./Projects.js')
+  projects: require('./Projects.js'),
+  contact: require('./Contact.js')
 };
