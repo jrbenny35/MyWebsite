@@ -4,13 +4,13 @@
 <html>
   <head></head>
   <body>
-    <div id="myPortfolio" class="container shadow-z-4">
+    <div id="myPortfolio" class="container-fluid">
       <h1>My Portfolio</h1>
       <hr>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div ng-repeat="project in projects.projects" class="col-lg-4">
-            <div class="card shadow-z-2"><img src="/images/yeoman.png" alt="Document image" class="card-img-top">
+            <div class="card shadow-z-2 container-fluid"><img src="/images/yeoman.png" alt="Document image" class="card-img-top img-responsive">
               <hr>
               <div class="card-block">
                 <h4 class="card-title">{{ project.title }}</h4>

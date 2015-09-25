@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var methodOverrride = require('method-override');
 var _ = require('lodash');
 
+
 //create express application
 var app = express();
 
@@ -25,6 +26,8 @@ app.use(function (req, res, next) {
     next();
 });
 
+
+
 //Connect to MongoDB
 mongoose.connect('mongodb://localhost/MyMeanWebsite');
 mongoose.connection.once('open', function(){
@@ -34,10 +37,10 @@ mongoose.connection.once('open', function(){
 
     //Load routes
     var routes = require('./routes');
-    _.each(routes, function(api, route){ //Iterates over each route in routes file. Assign path to first var, name to second var.
-        app.use(route, api(app, route))//At each route, calls module.exports function setting up API and returning middleware.
+    _.each(routes, function(api, route) { //Iterates over each route in routes file. Assign path to first var, name to second var.
+        app.use(route, api(app, route));//At each route, calls module.exports function setting up API and returning middleware.
     });
-
+    
     console.log('Listening on port 3000...');
     app.listen(3000);
 

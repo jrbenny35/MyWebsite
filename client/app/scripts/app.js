@@ -12,7 +12,8 @@ angular
   .module('clientApp', [
     'ngAnimate',
     'ngRoute',
-    'restangular' //Add restangular for rest functions
+    'restangular'//Add restangular for rest functions
+
   ])
   .config(function ($routeProvider, RestangularProvider) {//Add RestangularProvider
     RestangularProvider.setBaseUrl('http://localhost:3000');//Set url for all rest api's
@@ -64,8 +65,48 @@ angular
         controller: 'ProjectsCtrl',
         controllerAs: 'projects'
       })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
+      .when('/admin/contact-thankyou', {
+        templateUrl: 'views/contact-thankyou.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
+      })
+      .when('/contact/:id', {
+        templateUrl: 'views/contact-view.html',
+        controller: 'ContactViewCtrl',
+        controllerAs: 'contactView'
+      })
+      .when('/admin/contact-edit', {
+        templateUrl: 'views/contact-edit.html',
+        controller: 'ContactEditCtrl',
+        controllerAs: 'contactEdit'
+      })
+      .when('/contact/:id/delete', {
+        templateUrl: 'views/contact-delete.html',
+        controller: 'ContactDeleteCtrl',
+        controllerAs: 'contactDelete'
+      })
+      .when('/admin/contact-add', {
+        templateUrl: 'views/contact-add.html',
+        controller: 'ContactAddCtrl',
+        controllerAs: 'contactAdd'
+      })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
+      })
+      .when('/resume', {
+        templateUrl: 'views/resume.html',
+        controller: 'ResumeCtrl',
+        controllerAs: 'resume'
+      })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
   })
   .factory('ProjectsRestangular', function(Restangular){ //Setup factory to recognize id from get as _id from db
@@ -77,4 +118,14 @@ angular
   })
   .factory('Projects', function(ProjectsRestangular){
     return ProjectsRestangular.service('projects');
+  })
+  .factory('ContactRestangular', function(Restangular){ //Setup factory to recognize id from get as _id from db
+    return Restangular.withConfig(function(RestangularConfigurer){
+      RestangularConfigurer.setRestangularFields({
+        id: '_id'
+      });
+    });
+  })
+  .factory('Contact', function(ContactRestangular){
+      return ContactRestangular.service('contact');
   });

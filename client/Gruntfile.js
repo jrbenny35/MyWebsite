@@ -9,6 +9,9 @@
 
 module.exports = function (grunt) {
 
+  grunt.loadNpmTasks('grunt-nodemon');
+
+
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
 
@@ -66,6 +69,7 @@ module.exports = function (grunt) {
         ]
       }
     },
+
 
     // The actual grunt server settings
     connect: {
@@ -468,7 +472,8 @@ module.exports = function (grunt) {
     'concurrent:test',
     'autoprefixer',
     'connect:test',
-    'karma'
+    'karma',
+    'nodemon'
   ]);
 
   grunt.registerTask('build', [
@@ -486,7 +491,8 @@ module.exports = function (grunt) {
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'nodemon'
   ]);
 
   grunt.registerTask('default', [

@@ -1,0 +1,22 @@
+
+<!--
+Created by root on 9/24/15.
+
+-->
+<hr/>
+<table ng-controller="ContactCtrl" class="table table-striped">
+  <thead>
+    <th>Contact Name</th>
+    <th>Contact Email</th>
+    <th>Contact Message</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="contact in contact.contact">
+      <td><a ng-href="#/contact/{{contact._id}}">{{ contact.name }}</a></td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.message }}
+        <div class="btn-group"><a ng-href="#/admin/contact/{{contact._id}}/edit" class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a><a ng-href="#/admin/contact/{{contact._id}}/delete" class="btn btn-primary"><span class="glyphicon glyphicon-remove-circle"></span></a></div>
+      </td>
+    </tr>
+  </tbody>
+</table>

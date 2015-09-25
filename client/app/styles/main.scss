@@ -3,6 +3,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@font-face {
+  font-family: 'RobotoDraft';
+  font-style: normal;
+  font-weight: 100;
+  src: local("RobotoDraft Thin"), local("RobotoDraft-Thin"), url(https://fonts.gstatic.com/s/robotodraft/v2/hope9NW9iJ5hh8P5PM_EA2zZpt1Zv2lgqhgSPQ2HnUo.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -10,9 +18,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
-body {
-  padding: 0;
+body , html{
+  font-family: 'RobotoDraft', sans-serif;
+  font-weight: bold;
 }
+
+
 .navbar-brand,
   img{
     height: 5rem;
@@ -68,10 +79,16 @@ body {
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
-
-  p + h4 {
+  //margin: 40px 0;
+  padding-top: 1rem;
+  h2 {
+    color: #ec407a;
+    font-weight: 500;
+  }
+  h4 {
     margin-top: 28px;
+    padding: 5px;
+    border-left: 3px solid #ec407a; //material-teal-500
   }
 }
 
@@ -95,5 +112,157 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+
+}
+
+hr{
+  border-bottom: 1px solid #00bcd4 !important; //material-teal-500
+}
+
+#inTouch{
+  text-align: center;
+  padding-top: 7rem;
+}
+
+
+/* ------------------------    Nav    -------------------- */
+
+#side-nav .nav{
+  padding: 1rem;
+  height: 100%;
+  min-height: 100%;
+}
+
+.navbar-brand{
+  padding-top: 1.5rem;
+}
+
+.navbar{
+  margin-bottom: 0;
+  background-color:#26a69a !important; //material-blue-grey-300
+}
+
+.nav-link a:link, a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link a:visited{
+  background-color:#4db6ac !important; //material-blue-grey-300
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+
+
+
+.nav-link a:hover, a:focus, a:active{
+  background-color: #4db6ac !important; //material-blue-grey-300
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+
+}
+
+
+#side-nav .col-lg-3 h2{
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #00bcd4;
+}
+
+#side-nav-container{}
+
+#mainTitle{
+  //border: 1px solid black;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: #688897;
+}
+
+#view{
+  padding: 3rem;
+  padding-right: 3rem;
+}
+
+#myCarousel{
+  height: 20rem;
+  margin-right: 3rem;
+  //border-left: 2px solid #009688; //material-teal-500
+}
+
+.carousel .carousel-control {
+  visibility: hidden;
+}
+
+.carousel-indicators {
+  top: 1.5rem;
+  right:1.5rem;
+  bottom:auto;
+  left:auto;
+  width:1rem;
+  margin-left:0;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  height: 16rem;
+  background-color:#777777;
+}
+
+
+.carousel-indicators li {
+  background-color: #009688; //material-teal-500;
+}
+
+.carousel-indicators .active{
+  background-color: #90a4ae;
+}
+
+#bigCallout{
+  text-align: center;
+  border-right: 1.5px solid #00bcd4; //material-teal-500
+}
+
+#table{
+  padding: 1rem;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+#bio
+  h1{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ec407a;
+}
+
+#resume{
+  padding: 2rem;
+
+  button{
+    margin-bottom: 3rem;
+  }
+
+  h1{
+    color: #ec407a;
+  }
+}
+
+#contact{
+
+  h1{
+    color: #ec407a;
+  }
+}
+
+#my-dialog{
+
+  h3{
+    color: #ec407a
   }
 }

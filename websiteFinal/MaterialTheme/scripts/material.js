@@ -39,7 +39,7 @@
         ".withripple",
         ".pagination li:not(.active, .disabled) a:not(.withoutripple)"
       ].join(","),
-      "inputElements": "input.form-control, textarea.form-control, select.form-control",
+      "inputElements": "input.form-control.sass, textarea.form-control.sass, select.form-control.sass",
       "checkboxElements": ".checkbox > label > input[type=checkbox]",
       "togglebuttonElements": ".togglebutton > label > input[type=checkbox]",
       "radioElements": ".radio > label > input[type=radio]"
@@ -75,7 +75,7 @@
         if (!$this.attr("data-hint") && !$this.hasClass("floating-label")) {
           return;
         }
-        $this.wrap("<div class=form-control-wrapper></div>");
+        $this.wrap("<div class=form-control.sass-wrapper></div>");
         $this.after("<span class=material-input></span>");
 
         // Add floating label if required
@@ -105,12 +105,12 @@
 
       $(document)
       .on("change", ".checkbox input[type=checkbox]", function() { $(this).blur(); })
-      .on("keydown paste", ".form-control", function(e) {
+      .on("keydown paste", ".form-control.sass", function(e) {
         if(_isChar(e)) {
           $(this).removeClass("empty");
         }
       })
-      .on("keyup change", ".form-control", function() {
+      .on("keyup change", ".form-control.sass", function() {
         var $this = $(this);
         if ($this.val() === "" && (typeof $this[0].checkValidity != "undefined" && !$this[0].checkValidity())) {
           $this.addClass("empty");
@@ -118,13 +118,13 @@
           $this.removeClass("empty");
         }
       })
-      .on("focus", ".form-control-wrapper.fileinput", function() {
+      .on("focus", ".form-control.sass-wrapper.fileinput", function() {
         $(this).find("input").addClass("focus");
       })
-      .on("blur", ".form-control-wrapper.fileinput", function() {
+      .on("blur", ".form-control.sass-wrapper.fileinput", function() {
         $(this).find("input").removeClass("focus");
       })
-      .on("change", ".form-control-wrapper.fileinput [type=file]", function() {
+      .on("change", ".form-control.sass-wrapper.fileinput [type=file]", function() {
         var $this = $(this);
         var value = "";
         $.each(this.files, function(i, file) {
