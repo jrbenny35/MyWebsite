@@ -1,32 +1,21 @@
 
-<!--
-Created by root on 9/23/15.
-
+<!--Created by root on 9/23/15.
 -->
-<html>
-  <head></head>
-  <body>
-    <h1>Contact me</h1>
-    <hr/>
-    <h3>Please fill out this contact form below</h3>
-    <form id="contact">
-      <div class="form-group">
-        <label for="title" class="control-label">Name</label>
-        <input id="title" type="text" ng-model="project.title" placeholder="Enter the project title" class="form-control"/>
-      </div>
-      <div class="form-group">
-        <label for="description" class="control-label">Description</label>
-        <input id="title" type="text" ng-model="project.description" placeholder="Enter the project description" class="form-control"/>
-      </div>
-      <div class="form-group">
-        <label for="updated_On" class="control-label">Updated on</label>
-        <input id="title" type="text" ng-model="project.updated_On" placeholder="Enter when the project was updated" class="form-control"/>
-      </div>
-      <div class="form-group">
-        <label for="link" class="control-label">Link to Project</label>
-        <input id="title" type="text" ng-model="project.link" placeholder="Enter the link to the project" class="form-control"/>
-      </div>
-      <input type="submit" ng-click="updateProject()" value="Save" class="btn btn-primary"/>
-    </form>
-  </body>
-</html>
+<h1>Contact me</h1>
+<hr/>
+<h3>Please fill out this contact form below</h3>
+<form id="contact" ng-controller="ContactAddCtrl" role="form">
+  <div class="form-group">
+    <label for="Name" class="control-label">Name</label>
+    <input id="title" type="text" ng-model="contact.name" placeholder="Your name here" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label for="Email" class="control-label">Email</label>
+    <input id="title" type="text" ng-model="contact.email" placeholder="Your email address here" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label for="Message" class="control-label">Message</label>
+    <input id="title" type="text" ng-model="contact.message" placeholder="Spill your heart out here" class="form-control"/>
+  </div>
+  <input type="submit" ng-click="saveContact()" value="Send" class="btn btn-primary"/>
+</form>

@@ -81,11 +81,14 @@ body , html{
 .marketing {
   //margin: 40px 0;
   padding-top: 1rem;
-
+  h2 {
+    color: #ec407a;
+    font-weight: 500;
+  }
   h4 {
     margin-top: 28px;
     padding: 5px;
-    border-left: 3px solid #009688; //material-teal-500
+    border-left: 3px solid #ec407a; //material-teal-500
   }
 }
 
@@ -114,7 +117,7 @@ body , html{
 }
 
 hr{
-  border-bottom: 1px solid #009688 !important; //material-teal-500
+  border-bottom: 1px solid #00bcd4 !important; //material-teal-500
 }
 
 #inTouch{
@@ -137,6 +140,7 @@ hr{
 
 .navbar{
   margin-bottom: 0;
+  background-color:#26a69a !important; //material-blue-grey-300
 }
 
 .nav-link a:link, a:visited{
@@ -145,14 +149,14 @@ hr{
 }
 
 .nav-link a:visited{
-  background-color:#90a4ae !important; //material-blue-grey-300
+  background-color:#4db6ac !important; //material-blue-grey-300
   box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 
 
 
 .nav-link a:hover, a:focus, a:active{
-  background-color: #90a4ae !important; //material-blue-grey-300
+  background-color: #4db6ac !important; //material-blue-grey-300
   box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 
 }
@@ -162,7 +166,7 @@ hr{
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #009688;
+  border-bottom: 1px solid #00bcd4;
 }
 
 #side-nav-container{}
@@ -218,5 +222,20 @@ hr{
 
 #bigCallout{
   text-align: center;
-  border-right: 1.5px solid #009688; //material-teal-500
+  border-right: 1.5px solid #00bcd4; //material-teal-500
+}
+
+#table{
+  padding: 1rem;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+#bio
+  h1{
+  text-align: center;
+  margin-bottom: 2rem;
 }

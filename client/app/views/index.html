@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="clientApp">
 <head>
     <meta charset="utf-8">
     <title></title>
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/projects.css">
     <!-- endbuild -->
 </head>
-<body ng-app="clientApp">
+<body>
 <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -53,7 +53,7 @@
     </div>
 </div>
 
-<div class="container" layout="row">
+<div>
 
     <div ng-view=""></div>
 
@@ -102,6 +102,11 @@
 <script src="scripts/controllers/project-delete.js"></script>
 <script src="scripts/controllers/project-edit.js"></script>
 <script src="scripts/controllers/navCntrl.js"></script>
+<script src="scripts/controllers/contact.js"></script>
+<script src="scripts/controllers/contact-add.js"></script>
+<script src="scripts/controllers/contact-view.js"></script>
+<script src="scripts/controllers/contact-delete.js"></script>
+<script src="scripts/controllers/about.js"></script>
 
 <!-- endbuild -->
 </body>

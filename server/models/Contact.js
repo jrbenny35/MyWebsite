@@ -4,7 +4,6 @@
 
 var mongoose = require('mongoose');
 
-
 //Create Schema
 var contactSchema = new mongoose.Schema({
 
@@ -13,13 +12,17 @@ var contactSchema = new mongoose.Schema({
         require: true
     },
 
-    email: {
+    email:{
         type: String,
         require: true
     },
 
-    message: {
+    message:{
         type: String,
+        require: true
+    },
+    date:{
+        type: Date,
         require: true
     }
 });
