@@ -16,6 +16,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-fullpalette.css" />
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/projects.css">
@@ -36,15 +37,19 @@
                          <span class="icon-bar"></span>
                          <span class="icon-bar"></span>
                          <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
                      </button>
                      <a class="navbar-brand" href="#/home">Benny Jr</a>
                  </div>
                   <div class="collapse navbar-collapse material-blue-grey-500" id="js-navbar-collapse">
                     <ul class="nav navbar-nav" ng-controller="navCntrl">
-                      <li ng-class="{active: isActive('/home')}"><a href="#/home">Home</a></li>
-                      <li ng-class="{active: isActive('/projects')}"><a ng-href="#/projects">Projects</a></li>
-                      <li ng-class="{active: isActive('/contact')}"><a ng-href="#/contact">Contact</a></li>
-                      <li ng-class="{active: isActive('/admin')}"><a ng-href="#/admin">Admin</a></li>
+                        <li ng-class="{active: isActive('/home')}"><a href="#/home">Home</a></li>
+                        <li ng-class="{active: isActive('/about')}"><a href="#/about">About Me</a></li>
+                        <li ng-class="{active: isActive('/resume')}"><a href="#/resume">My Resume</a></li>
+                        <li ng-class="{active: isActive('/projects')}"><a ng-href="#/projects">Projects</a></li>
+                        <li ng-class="{active: isActive('/contact')}"><a ng-href="#/contact">Contact</a></li>
+                        <li ng-class="{active: isActive('/admin')}"><a ng-href="#/admin">Admin</a></li>
                       </ul>
                   </div>
               </div>
@@ -60,6 +65,7 @@
                       <li ng-class="{active: isActive('/projects')}" class="nav-link hvr-grow"><a ng-href="#/projects/" class="shadow-z-1"><h4>Projects</h4></a></li>
                       <li ng-class="{active: isActive('/admin')}" class="nav-link hvr-grow"><a ng-href="#/admin/" class="shadow-z-1"><h4>Admin</h4></a></li>
                       <li ng-class="{active: isActive('/contact')}" class="nav-link hvr-grow"><a ng-href="#/contact/" class="shadow-z-1"><h4>Contact</h4></a></li>
+                      <li ng-class="{active: isActive('/resume')}" class="nav-link hvr-grow"><a ng-href="#/resume/" class="shadow-z-1"><h4>My Resume</h4></a></li>
                       <li ng-class="{active: isActive('/about')}" class="nav-link hvr-grow"><a ng-href="#/about/" class="shadow-z-1"><h4>About Me</h4></a></li>
 
                   </ul>
@@ -117,6 +123,7 @@
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
@@ -130,6 +137,7 @@
         <script src="scripts/controllers/contact-view.js"></script>
         <script src="scripts/controllers/contact-delete.js"></script>
         <script src="scripts/controllers/contact-add.js"></script>
+        <script src="scripts/controllers/resume.js"></script>
         <!-- endbuild -->
   </body>
 </html>

@@ -1,0 +1,29 @@
+//
+   Created by root on 9/25/15.
+.container-fluid#resume
+  h1 My Resume
+  hr
+  h3 I have provided a view and a download link for my resume
+  .container-fluid
+    p View Resume here
+    button.btn.btn-default.btn-raised.btn-material-teal-300(data-toggle="modal" data-target="#my-dialog") View
+
+    p Download Resume here
+    button.btn.btn-default.btn-raised.btn-material-teal-300(href="#") Download
+
+  .modal.fade#my-dialog(tab-index="-1")
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type="button" data-dismiss="modal" aria-hidden="true") x
+          h3.modal-title Benjamin Forehand Jr
+          hr
+        .modal-body
+          p.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor iaculis nisl, nec dignissim risus tincidunt eu. Praesent in leo purus. Phasellus justo massa, tincidunt eu finibus sed, maximus at purus. Vestibulum quis lorem dictum elit eleifend tempus sit amet quis nisl. Vivamus tristique velit a odio commodo sodales.
+            Mauris eu quam eu turpis scelerisque eleifend. Mauris cursus, justo non pellentesque tristique, orci orci hendrerit nisi, et condimentum nisl libero in arcu. Nam blandit quis felis eget porttitor. Suspendisse consequat metus quis aliquet convallis. Integer vitae ullamcorper velit, nec vehicula arcu. Nullam turpis lorem, facilisis id
+            molestie sed, dictum vel purus. Duis aliquet massa dapibus iaculis condimentum.
+            Duis iaculis id libero eu posuere. Cras at urna non elit elementum pharetra. In porta gravida ornare.
+          hr
+        .modal-footer
+          btn.btn.btn-primary(data-dismiss="modal") Dismiss
