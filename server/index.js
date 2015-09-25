@@ -40,8 +40,8 @@ mongoose.connection.once('open', function(){
     _.each(routes, function(api, route) { //Iterates over each route in routes file. Assign path to first var, name to second var.
         app.use(route, api(app, route));//At each route, calls module.exports function setting up API and returning middleware.
     });
-
-    console.log('Listening on port 3000');
+    
+    console.log('Listening on port 3000...');
     app.listen(3000);
 
 });
